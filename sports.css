@@ -1,7 +1,8 @@
 body{
     font-size: 3em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(89, 127, 197);
+    color: #FCECDD;
+    background-color: #FFC288;
     min-height: 100vh;
     display: grid;
     gap: 10px;
@@ -11,12 +12,16 @@ body{
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+p{
+    text-align: center;
 }
 div{
-    background-color: aquamarine;
+    background-color: #FEA82F;
     grid-column: 2/3;
     grid-row: 2/3;
-    border: 20px solid rgb(240, 149, 149);
+    border: 20px solid #FF6701;
     border-radius: 20px;
     padding-left: 25px;
 }
