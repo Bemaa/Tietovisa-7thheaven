@@ -1,0 +1,30 @@
+body{
+    font-size: 3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(50, 0, 73);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+div{
+    background-color: rgb(219, 127, 255);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 20px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-left: 25px;
+}
+input[type="radio"]{
+    margin: 0.3em;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
