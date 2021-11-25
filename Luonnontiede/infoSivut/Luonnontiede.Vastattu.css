@@ -1,0 +1,61 @@
+input[type="radio"]{
+    margin: 0.3em;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
+body{
+    text-align: center;
+    background-image: url("../../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
+    background-size: cover;
+}
+#numero{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 0em;
+}
+#content{
+    padding-top: 4em;
+}
+.col-6{
+    text-align: center;
+    background-color: rgb(163, 238, 163);
+    border: 15px solid rgb(7, 226, 55);
+    border-radius: 15px;
+}
+p{
+    font-family:cursive;
+    font-size: 1.5em;
+}
+#kysymys{
+    text-decoration: underline;
+    text-decoration-color: rgb(28, 141, 0);
+}
+#vastausA{
+    background-color: crimson;
+    border: 3px solid crimson;
+    border-radius: 5px;
+}
+#vastausB{
+    background-color: crimson;
+    border: 3px solid crimson;
+    border-radius: 5px;
+}
+#vastausC{
+    background-color: rgb(0, 172, 37);
+    border: 3px solid rgb(0, 172, 37);
+    border-radius: 5px;
+}
+#vastausD{
+    background-color: crimson;
+    border: 3px solid crimson;
+    border-radius: 5px;
+}
+#vastausE{
+    background-color: crimson;
+    border: 3px solid crimson;
+    border-radius: 5px;
+}
