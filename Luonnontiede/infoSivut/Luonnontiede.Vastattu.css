@@ -34,28 +34,3 @@ p{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
 }
-#vastausA{
-    background-color: crimson;
-    border: 3px solid crimson;
-    border-radius: 5px;
-}
-#vastausB{
-    background-color: crimson;
-    border: 3px solid crimson;
-    border-radius: 5px;
-}
-#vastausC{
-    background-color: rgb(0, 172, 37);
-    border: 3px solid rgb(0, 172, 37);
-    border-radius: 5px;
-}
-#vastausD{
-    background-color: crimson;
-    border: 3px solid crimson;
-    border-radius: 5px;
-}
-#vastausE{
-    background-color: crimson;
-    border: 3px solid crimson;
-    border-radius: 5px;
-}
