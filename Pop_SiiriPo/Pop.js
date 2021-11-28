@@ -4,6 +4,8 @@ const CORRECT = "Oikein, hyvä hyvä! Minecraft on erittäin kuuluisa siitä, et
 
 const INCORRECT = "Ei ihan! Tässä pelissä on muitakin muotoja kuin neliöitä."
 
+// Korjaa radiobuttonit ettei käyttäjä voi valita montaa & käyttäjä voi vaihtaa valintaansa.
+
 function correctAnswer() {
 
     // Jos Lego Worlds valittu
