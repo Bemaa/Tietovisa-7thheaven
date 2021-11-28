@@ -18,7 +18,7 @@ body{
     padding-top: 0em;
 }
 #content{
-    padding-top: 3em;
+    padding-top: 1.5em;
 }
 .col-6{
     text-align: center;
@@ -34,8 +34,10 @@ p{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
 }
+span{
+    font-weight: bold;
+}
 .selite{
     background-color: rgb(199, 241, 208);
     border: 3px solid rgb(199, 241, 208);
-    border-radius: 5px;
-}
+    border-radius: 5px;}
