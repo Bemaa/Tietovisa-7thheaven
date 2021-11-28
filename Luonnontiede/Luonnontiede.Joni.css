@@ -20,6 +20,9 @@ body{
 #content{
     padding-top: 4em;
 }
+span{
+    font-weight: bold;
+}
 .col-6{
     text-align: center;
     background-color: rgb(163, 238, 163);
