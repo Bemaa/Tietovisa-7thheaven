@@ -1,5 +1,6 @@
 body{
     font-size: 3em;
+ 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FCECDD;
     background-color: #FFC288;
@@ -7,8 +8,6 @@ body{
     display: grid;
     gap: 10px;
     padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -17,14 +16,17 @@ h2{
 p{
     text-align: center;
 }
-div{
+.col{
+    text-align: center;
     background-color: #FEA82F;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 20px solid #FF6701;
-    border-radius: 20px;
-    padding-left: 25px;
+    border: 15px solid #FF6701;
+    border-radius: 15px;
 }
+
+.container{
+    text-align: center;
+}
+
 input[type="radio"]{
     margin: 0.3em;
     font: inherit;
