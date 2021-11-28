@@ -18,6 +18,9 @@ function correctAnswer() {
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
     
+        document.getElementById("lego").classList.add("incorrectAnswer");
+        document.getElementById("minecraft").classList.add("correctAnswer");
+
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
@@ -30,6 +33,9 @@ function correctAnswer() {
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
+
+        document.getElementById("roblox").classList.add("incorrectAnswer");
+        document.getElementById("minecraft").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
@@ -43,6 +49,9 @@ function correctAnswer() {
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
+
+        document.getElementById("amongUs").classList.add("incorrectAnswer");
+        document.getElementById("minecraft").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
@@ -56,6 +65,8 @@ function correctAnswer() {
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
+
+        document.getElementById("minecraft").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("correctAnswer");
     }
@@ -69,6 +80,9 @@ function correctAnswer() {
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
+
+        document.getElementById("sims").classList.add("incorrectAnswer");
+        document.getElementById("minecraft").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
