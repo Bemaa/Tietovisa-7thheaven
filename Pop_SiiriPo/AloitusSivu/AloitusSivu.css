@@ -11,6 +11,7 @@ body {
     zoom: 85%;
 }
 
+
 h4 {
     margin: 15px;
     padding-left: 8px;
@@ -27,29 +28,6 @@ h2 {
     margin: 25px;
 }
 
-div#kysymysVastaus {
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 25px;
-    border: none;
-    border-radius: 0;
-
-}
-
-div#imageParent {
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 25px;
-    border: none;
-    border-radius: 0;
-}
-
-img#image1 {
-    display: none;
-}
-
 div {
     background-color: #FFBCE9;
     grid-column: 2/3;
@@ -60,39 +38,11 @@ div {
     padding-right: 25px;
 }
 
-label {
-    font-size: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+button#aloita {
+    float: center;
 }
 
-input[type="radio"] {
-    margin: 0.3em;
-    font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
-    border-radius: 50%;
-    font-size: 25px;
-    margin-left: 25px;
-    margin-top: -1px;
-    vertical-align: middle;
-
-}
-
-button {
-    margin: 10px;
-}
-
-button#seuraava {
-    visibility: hidden;
-}
-
-.correctAnswer {
-    color: green;
-}
-
-.incorrectAnswer {
-    color: red;
+p#onnea {
+    font-size: large;
+    align-items: center;
 }
