@@ -7,7 +7,7 @@ input[type="radio"]{
     border: 0.15em solid currentColor;
     border-radius: 50%;
 }
-body{
+#kysymys1Body{
     text-align: center;
     background-image: url("../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
     background-size: cover;
@@ -18,7 +18,7 @@ body{
     padding-top: 0em;
 }
 #content{
-    padding-top: 4em;
+    padding-top: 3em;
 }
 span{
     font-weight: bold;
@@ -36,4 +36,9 @@ p{
 #kysymys{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
+}
+#kysymys2Body{
+    background-color: coral;
+    text-align: center;
+    background-size: cover;
 }

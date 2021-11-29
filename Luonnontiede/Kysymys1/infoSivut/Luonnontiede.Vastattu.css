@@ -9,7 +9,7 @@ input[type="radio"]{
 }
 body{
     text-align: center;
-    background-image: url("../../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
+    background-image: url("../../Luonnontiede.jpg");
     background-size: cover;
 }
 #numero{
