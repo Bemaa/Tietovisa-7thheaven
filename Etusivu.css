@@ -8,3 +8,7 @@ a{
     text-decoration: none;
     color: black;
 }
+a#pop:hover{
+    color: #d6208d;
+    font-weight: bold;
+}

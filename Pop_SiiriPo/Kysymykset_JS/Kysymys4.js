@@ -1,6 +1,6 @@
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
-const CORRECT = "Mahtavaa! Tämähän on kaikkien rakastaman Disney studion logo!"
+const CORRECT = "Mahtavaa! Tämähän on kaikkien rakastaman Walt Disney studion logo!"
 
 const INCORRECT = "Voi ei! Tämä on Disney studion logo."
 

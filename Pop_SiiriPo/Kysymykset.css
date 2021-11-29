@@ -2,7 +2,8 @@ body {
     font-size: 2em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url("../Kuvat/Background_image.jpg");
-    background-size: 2000px;
+    background-size: 5000px;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: grid;
@@ -37,6 +38,16 @@ div#kysymysVastaus {
 
 }
 
+div {
+    background-color: #FFBCE9;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 20px solid #921560;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 div#imageParent {
     background-color: white;
     text-align: center;
@@ -48,16 +59,8 @@ div#imageParent {
 
 img#image1 {
     display: none;
-}
-
-div {
-    background-color: #FFBCE9;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 20px solid #921560;
-    border-radius: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 label {
