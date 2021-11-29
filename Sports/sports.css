@@ -1,27 +1,38 @@
 body{
     font-size: 3em;
     background-color: #FFC288;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    
 }
 #head{
-
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+    
 }
+
+
 
 #subhead{
 
 }
 
-.col-6{
+.col{
+ margin-top: 10%;
+    
+}
+
+#quiz{
     text-align: center;
+    margin: 10% 0 10% 0;
+    padding-top: 4em;
+    grid-column: 2/3;
+
     background-color: #FEA82F;
     border: 15px solid #FF6701;
     border-radius: 15px;
-    font-family: cursive;
-}
-
-.container{
-    text-align: center;
-    padding-top: 4em;
-    background-color: transparent;
     
 }
 
