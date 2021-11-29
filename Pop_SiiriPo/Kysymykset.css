@@ -1,7 +1,7 @@
 body {
     font-size: 2em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url("../Kuvat/Background_image.jpg");
+    background-image: url("./Kuvat/Background_image.jpg");
     background-size: 5000px;
     background-position: center;
     background-repeat: no-repeat;
