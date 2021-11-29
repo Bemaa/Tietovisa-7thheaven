@@ -20,15 +20,15 @@ function anwser2(){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeHiili.html")
     }
     if(document.getElementById("vastaus7").checked){
-        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeIlves.Joni.html")
+        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeMagma.html")
     }
     if(document.getElementById("vastaus8").checked){
-        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeTiikeri.Joni.html")
+        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeTuli.html")
     }
     if(document.getElementById("vastaus9").checked){
-        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeHuuhkaja.Joni.html")
+        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeLaava.html")
     }
     if(document.getElementById("vastaus10").checked){
-        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeKettu.Joni.html")
+        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeGraniitti.html")
     }
 };
