@@ -10,6 +10,7 @@ body {
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    background-image: Historia\images\history.jfif;
 }
 
 h4 {
@@ -35,7 +36,6 @@ div#kysymysVastaus {
     margin: 25px;
     border: none;
     border-radius: 0;
-
 }
 
 div {
@@ -62,11 +62,12 @@ input[type="radio"] {
     height: 1.15em;
     border: 0.15em solid currentColor;
     border-radius: 50%;
-    font-size: 25px;
-
+    font-size: 25px; 
+    margin-top: 8.5px;
+    vertical-align: middle;
 }
 
-.btn {
+.btn1 {
     font-size: 2.4rem;
     padding: 2 rem 0;
     width: 30rem;
@@ -74,6 +75,19 @@ input[type="radio"] {
     margin-bottom: 1rem;
     text-decoration: none;
     color: rgb(28, 26, 26);
-    background: linear-gradient(90deg, rgb(126, 65, 8) 0%, rgb(144, 81, 23) 100%);
+    background: linear-gradient(90deg, rgb(7, 177, 21) 0%, rgb(17, 75, 2) 100%);
     border-radius: 4px;
 }
+
+.btn2 {
+    font-size: 2.4rem;
+    padding: 2 rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(126, 65, 8) 0%, rgb(165, 96, 31) 100%);
+    border-radius: 4px;
+}
+
