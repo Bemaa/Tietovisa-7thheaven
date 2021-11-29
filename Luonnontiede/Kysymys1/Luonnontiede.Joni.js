@@ -15,3 +15,6 @@ function anwser(){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeKettu.Joni.html")
     }
 };
+function next(){
+    window.location.replace("../../../Luonnontiede/Kysymys2/Luonnontiede2.Joni.html")
+}
