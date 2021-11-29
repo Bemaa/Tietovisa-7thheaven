@@ -18,7 +18,7 @@ body{
     padding-top: 0em;
 }
 #content{
-    padding-top: 4em;
+    padding-top: 3em;
 }
 span{
     font-weight: bold;
@@ -36,10 +36,4 @@ p{
 #kysymys{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
-}
-
-#kysymys2Kuva{
-    text-align: center;
-    border: 15px solid rgb(7, 226, 55);
-    max-width: 35%;
 }
