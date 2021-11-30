@@ -51,3 +51,14 @@ function anwser3(){
         window.location.replace("../../Luonnontiede/Kysymys3/infoSivut3/LuonnontiedeLeijona.html")
     }
 };
+function anwser4(){
+    if(document.getElementById("vastaus16").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
+    }
+    if(document.getElementById("vastaus17").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html")
+    }
+    if(document.getElementById("vastaus18").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
+    }
+};
