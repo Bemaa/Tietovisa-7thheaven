@@ -62,3 +62,14 @@ function anwser4(){
         window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
     }
 };
+function anwser5(){
+    if(document.getElementById("vastaus19").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
+    }
+    if(document.getElementById("vastaus20").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html")
+    }
+    if(document.getElementById("vastaus21").checked){
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
+    }
+};
