@@ -69,12 +69,12 @@ function anwser4(){
 };
 function anwser5(){
     if(document.getElementById("vastaus19").checked){
-        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
+        window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKissankello.html")
     }
     if(document.getElementById("vastaus20").checked){
-        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html")
+        window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeMaitohorsma.html")
     }
     if(document.getElementById("vastaus21").checked){
-        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
+        window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKielo.html")
     }
 };
