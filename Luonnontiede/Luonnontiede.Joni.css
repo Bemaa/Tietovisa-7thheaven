@@ -17,6 +17,11 @@ input[type="radio"]{
     text-align: left;
     padding-top: 0em;
 }
+#pisteet{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 0em;
+}
 #content{
     padding-top: 3em;
 }
