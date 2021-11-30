@@ -1,4 +1,4 @@
-let points = [];
+let pointsArray = [];
 
 function anwser(){
     if(document.getElementById("vastaus1").checked){
@@ -8,8 +8,8 @@ function anwser(){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeIlves.Joni.html")
     }
     if(document.getElementById("vastaus3").checked){
-        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeTiikeri.Joni.html")
-        points.push(1);
+        window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeTiikeri.Joni.html");
+        pointsArray.push("1");
     }
     if(document.getElementById("vastaus4").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeHuuhkaja.Joni.html")
@@ -17,7 +17,6 @@ function anwser(){
     if(document.getElementById("vastaus5").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeKettu.Joni.html")
     }
-    document.getElementById("points").innerHTML = points.length;
 };
 function anwser2(){
     if(document.getElementById("vastaus6").checked){
@@ -30,8 +29,8 @@ function anwser2(){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeTuli.html")
     }
     if(document.getElementById("vastaus9").checked){
-        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeLaava.html")
-        points.push(1);
+        window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeLaava.html");
+        pointsArray.push("1");
     }
     if(document.getElementById("vastaus10").checked){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeGraniitti.html")
@@ -39,8 +38,8 @@ function anwser2(){
 };
 function anwser3(){
     if(document.getElementById("vastaus11").checked){
-        window.location.replace("../../Luonnontiede/Kysymys3/infoSivut3/LuonnontiedeSinivalas.html")
-        points.push(1);
+        window.location.replace("../../Luonnontiede/Kysymys3/infoSivut3/LuonnontiedeSinivalas.html");
+        pointsArray.push("1");
     }
     if(document.getElementById("vastaus12").checked){
         window.location.replace("../../Luonnontiede/Kysymys3/infoSivut3/LuonnontiedeAfrikannorsu.html")
@@ -60,8 +59,8 @@ function anwser4(){
         window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
     }
     if(document.getElementById("vastaus17").checked){
-        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html")
-        points.push(1);
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html");
+        pointsArray.push("1");
     }
     if(document.getElementById("vastaus18").checked){
         window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
@@ -75,6 +74,8 @@ function anwser5(){
         window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeMaitohorsma.html")
     }
     if(document.getElementById("vastaus21").checked){
-        window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKielo.html")
+        window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKielo.html");
+        pointsArray.push("1");
     }
 };
+document.getElementById("totalPoints").innerHTML = pointsArray.length;

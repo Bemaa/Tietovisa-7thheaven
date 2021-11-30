@@ -22,6 +22,12 @@ input[type="radio"]{
     text-align: left;
     padding-top: 0em;
 }
+#loppuPisteet{
+    font-size: 50px;
+}
+#totalPoints{
+    font-size: 50px;
+}
 #content{
     padding-top: 3em;
 }
