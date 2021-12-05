@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    margin: 15px;
+    padding-top: 1.8em;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a#pop:hover{
+    color: #d6208d;
+    font-weight: bold;
+}

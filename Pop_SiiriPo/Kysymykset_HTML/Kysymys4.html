@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietovisa - Kysymys 4.</title>
+    <link rel="stylesheet" href="../Kysymykset.css">
+    <script src="../Kysymykset_JS/Kysymys4.js" defer></script>
+</head>
+<body>
+    <div id="quiz">
+        <h4>Kysymys 4/5</h4>
+        <h2>Popkulttuuri</h2>
+
+        <div id=kysymysVastaus>
+            <p class=kysymys> Minkä elokuvayhtiön logo tämä on? </p>
+            <div id=imageParent>
+                <img src="../Kuvat/WaltDisney.jpeg" alt="Disney Logo"
+                style="width: 300px; height: 300px;" id=image1>
+
+                <img src="../Kuvat/WaltDisneyBlurred.png" alt="Disney Logo sumennettu"
+                style="width: 300px; height: 300px;" id=image2>
+            </div>
+            <p id=ratkaisu></p>
+        </div>
+    
+        <input type="radio" id="vastaus1" name="pop">
+        <label for="vastaus1" id="v1">Dreamworks</label><br>
+
+        <input type="radio" id="vastaus2" name="pop">
+        <label for="vastaus2" id="v2">Universal pictures</label><br>
+
+        <input type="radio" id="vastaus3" name="pop">
+        <label for="vastaus3" id="v3">Warner Bros</label><br>
+
+        <input type="radio" id="vastaus4" name="pop">
+        <label for="vastaus4" id="v4">Pixar</label><br>
+
+        <input type="radio" id="vastaus5" name="pop">
+        <label for="vastaus5" id="v5">Walt Disney</label><br>
+
+
+        <button id="lukitse">Lukitse vastaus</button>
+
+        <button onclick="location.href='../Kysymykset_HTML/Kysymys5.html'" id="seuraava">Seuraava kysymys</button>
+    </div>
+</body>
+</html>
