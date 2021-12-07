@@ -17,7 +17,7 @@ input[type="radio"]{
     text-align: left;
     padding-top: 0em;
 }
-#pisteet{
+.pisteet{
     font-size: 20px;
     text-align: left;
     padding-top: 0em;
@@ -39,6 +39,12 @@ span{
     background-color: rgb(163, 238, 163);
     border: 15px solid rgb(7, 226, 55);
     border-radius: 15px;
+}
+#aloitus > a{    
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    margin: 3em;
 }
 p{
     font-family:cursive;

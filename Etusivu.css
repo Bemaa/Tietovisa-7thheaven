@@ -1,14 +1,46 @@
+body{
+    background-image: url("../Tietovisa-7thheaven/triangles-1430105_960_720.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
 div{
     text-align: center;
     margin: 15px;
     padding-top: 1.8em;
     font-size: 30px;
 }
+.col-6{
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color: rgb(252, 220, 245);
+}
 a{
     text-decoration: none;
     color: black;
 }
+p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
 a#pop:hover{
     color: #d6208d;
+    font-weight: bold;
+}
+a#luonnontiede:hover{
+    color: #20d638;
+    font-weight: bold;
+}
+a#historia:hover{
+    color: #e3f11e;
+    font-weight: bold;
+}
+a#taide:hover{
+    color: #a311b6;
+    font-weight: bold;
+}
+a#urheilu:hover{
+    color: #d68d20;
     font-weight: bold;
 }
