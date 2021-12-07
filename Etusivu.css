@@ -4,6 +4,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 div{
     text-align: center;
@@ -25,23 +26,52 @@ p{
     font-size: 1.5em;
     font-weight: bold;
 }
+#pop{
+    padding: 15px;
+    border: 3px solid #d6208d;   
+    border-radius: 15px;    
+}
+#luonnontiede{
+    padding: 15px;
+    background-color: #bcebc2;
+    border: 3px solid #20d638;   
+    border-radius: 15px;    
+}
+#historia{
+    padding: 15px;
+    background-color: #f8f7c4;
+    border: 3px solid #d3cf00;    
+    border-radius: 15px;   
+}
+#taide{
+    padding: 15px;
+    background-color: #f6d2fa;
+    border: 3px solid #a311b6;    
+    border-radius: 15px;   
+}
+#urheilu{
+    padding: 15px;
+    background-color: #eeddc4;
+    border: 3px solid #d68d20; 
+    border-radius: 15px;   
+}
 a#pop:hover{
-    color: #d6208d;
+    color: #79104f;
     font-weight: bold;
 }
 a#luonnontiede:hover{
-    color: #20d638;
+    color: #116e1d;
     font-weight: bold;
 }
 a#historia:hover{
-    color: #e3f11e;
+    color: #949100;
     font-weight: bold;
 }
 a#taide:hover{
-    color: #a311b6;
+    color: #670974;
     font-weight: bold;
 }
 a#urheilu:hover{
-    color: #d68d20;
+    color: #8f5e14;
     font-weight: bold;
 }
