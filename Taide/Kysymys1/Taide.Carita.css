@@ -13,8 +13,10 @@ body{
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 60px;
     color: rgb(33, 2, 63);
     padding-right: 30px;
+    padding: 30px;
     background-color: rgb(244, 200, 255);
 }
 h4{
@@ -29,7 +31,7 @@ div{
     border: 10px solid rgb(255, 255, 255);
     border-radius: 20px;
     font-size: 30px;
-   
+    color: rgb(33, 2, 63);
 }
 input[type="radio"]{
     margin: 0.3em;
