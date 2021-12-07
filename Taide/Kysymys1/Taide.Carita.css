@@ -1,5 +1,5 @@
 body{
-    font-size: 3em;
+    font-size: 70px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(50, 0, 73);
     height: 100vh;
@@ -16,7 +16,7 @@ h2{
 }
 h4{
     font-size: 20px;
-    
+    position: relative;
 }
 div{
     background-color: rgb(219, 127, 255);
@@ -24,7 +24,7 @@ div{
     grid-row: 2/3;
     border: 20px solid rgb(255, 255, 255);
     border-radius: 20px;
-    font-size: 50px;
+    font-size: 30px;
    
 }
 input[type="radio"]{
@@ -40,10 +40,19 @@ p:nth-of-type(1){
     background-color: rgb(219, 127, 255);
     border-bottom : 20px solid rgb(255, 255, 255);
     border: radius 20px;
-    font-size: 75%;
+    font-size: 40px;
     text-align: center;
     padding: 10px;
 }
 button{
-    
+    background-color: rgb(50, 0, 73);
+    color: rgb(244, 200, 255);
+    border-width: 5px;
+    border-color: rgb(244, 200, 255);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
 }
