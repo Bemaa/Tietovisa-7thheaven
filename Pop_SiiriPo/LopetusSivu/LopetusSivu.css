@@ -36,10 +36,12 @@ div {
     border-radius: 20px;
     padding-left: 25px;
     padding-right: 25px;
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 button#palaaY {
-    margin-left: 220px;
     padding: 10px 35px;
     font-size: large;
     font-weight: bold;
@@ -53,5 +55,4 @@ button#palaaE {
 
 p#kiitos {
     font-size: large;
-    margin-left: 250px;
 }
