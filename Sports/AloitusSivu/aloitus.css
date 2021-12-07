@@ -1,0 +1,38 @@
+body{
+    background-image: url(AloitusSivu/grain-798296.jpg);
+    
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.container{
+    grid-column: 2/3;
+    grid-row:  2/3;
+    background-color: #FEA82F;
+    border: 15px solid #FF6701;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+#otsikko{
+    text-align: center;
+    padding: 20px;
+}
+
+#valiotsikko{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#aloitus{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+
+}
