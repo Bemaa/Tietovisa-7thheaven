@@ -31,40 +31,40 @@ p{
     background-color:#fad7ff;
     border: 3px solid #d6208d;   
     border-radius: 15px;    
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #luonnontiede{
     padding: 15px;
     background-color: #bcebc2;
     border: 3px solid #20d638;   
     border-radius: 15px;   
-    padding-left: 30px;
-    padding-right: 30px; 
+    padding-left: 40px;
+    padding-right: 40px; 
 }
 #historia{
     padding: 15px;
     background-color: #f8f7c4;
     border: 3px solid #d3cf00;    
     border-radius: 15px;   
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 #taide{
     padding: 15px;
     background-color: #f6d2fa;
     border: 3px solid #a311b6;    
     border-radius: 15px;  
-    padding-left: 30px;
-    padding-right: 30px; 
+    padding-left: 90px;
+    padding-right: 90px; 
 }
 #urheilu{
     padding: 15px;
     background-color: #eeddc4;
     border: 3px solid #d68d20; 
     border-radius: 15px;  
-    padding-left: 30px;
-    padding-right: 30px; 
+    padding-left: 80px;
+    padding-right: 80px; 
 }
 a#pop:hover{
     color: #79104f;
