@@ -57,6 +57,9 @@ p:nth-of-type(1){
     padding-top: 30px;
     margin-top: -50px;
 }
+.resize{
+    width: 50%;
+}
 button{
     background-color: rgb(50, 0, 73);
     color: rgb(244, 200, 255);
