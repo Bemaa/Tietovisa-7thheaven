@@ -1,4 +1,5 @@
 let points = [];
+
 function anwser(){
     if(document.getElementById("vastaus1").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeHirvi.Joni.html")

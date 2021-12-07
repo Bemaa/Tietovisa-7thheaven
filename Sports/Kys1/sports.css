@@ -22,6 +22,11 @@ body{
     
 }
 
+#kysymykset{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 #quiz{
     text-align: center;
     margin: 10% 0 10% 0;
