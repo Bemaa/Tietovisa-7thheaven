@@ -10,9 +10,7 @@ body {
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-image: Historia\images\history.jfif;
 }
-
 h4 {
     margin: 15px;
     padding-left: 20px;
