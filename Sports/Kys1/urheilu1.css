@@ -1,30 +1,30 @@
 body{
+    background-image: url(../Tausta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 3em;
-    background-color: #FFC288;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
+    height: 100%;
     
 }
 #head{
+    
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 2px;
+    color: #FF8243;
     
 }
 
-
-
-
-
-.col{
- margin-top: 10%;
-    
+#subhead{
+    font-size: 30px;
 }
 
 #kysymykset{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    padding: 15px;
 }
 
 #quiz{
@@ -33,8 +33,8 @@ body{
     padding-top: 4em;
     grid-column: 2/3;
 
-    background-color: #FEA82F;
-    border: 15px solid #FF6701;
+    background-color: #F3F0D7;
+    border: 15px solid #fcca85;
     border-radius: 15px;
     
 }
