@@ -1,7 +1,6 @@
 body{
-    background-image: url(../AloitusSivu/grain-798296.jpg);
+    background-image: url(../Tausta.png);
     background-repeat: no-repeat;
-    
     background-size: cover;
     height: 100%;
     display: grid;
@@ -13,8 +12,8 @@ body{
 .container{
     grid-column: 2/3;
     grid-row:  2/3;
-    background-color: #FEA82F;
-    border: 15px solid #FF6701;
+    background-color: #F3F0D7;
+    border: 15px solid #fcca85;
     border-radius: 15px;
     padding: 10px;
 }
