@@ -1,58 +1,56 @@
 body {
-    font-size: 2em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url("../Kuvat/Background_image.jpg");
+    background-image: url("Background_image.jpg");
+    background-repeat: no-repeat;
     background-size: 5000px;
     background-position: center;
-    background-repeat: no-repeat;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    zoom: 85%;
+    zoom: 75%;
 }
 
-h4 {
-    margin: 15px;
-    padding-left: 8px;
-    font-size: 30px;
+.quiz {
+    background-color: #FFBCE9;
+    border: 20px solid #921560;
+    border-radius: 20px;
+    width: 650px;
+    height: 400px;
+    margin: auto;
+    margin-top: 250px;
 }
 
-h2 {
+.tietoja {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.otsikko {
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 20px;
     padding-right: 25px;
     padding-left: 25px;
     margin: 25px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-div {
-    background-color: #FFBCE9;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 20px solid #921560;
-    border-radius: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    display: block;
-    margin: auto;
+.buttons {
+    margin-top: 20px;
     text-align: center;
 }
 
-button#palaaY {
-    padding: 10px 35px;
-    font-size: large;
+.kiitos {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-button#palaaE {
+.ylatunniste {
+    font-size: 25px;
+    color: black;
+}
+
+.etusivulle {
     float: right;
-    margin-bottom: 10px;
-}
-
-p#kiitos {
-    font-size: large;
 }

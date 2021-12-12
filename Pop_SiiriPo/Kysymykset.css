@@ -1,9 +1,10 @@
 body {
-    background-image: url("./Kuvat/Background_image.jpg");
+    background-image: url("Background_image.jpg");
     background-repeat: no-repeat;
     background-size: 5000px;
     background-position: center;
     height: 100%;
+    zoom: 75%;
 }
 
 .quiz {
@@ -11,9 +12,9 @@ body {
     border: 20px solid #921560;
     border-radius: 20px;
     width: 650px;
-    height: 770px;
+    height: 1050px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 div#kysymysVastaus {
@@ -84,7 +85,6 @@ div#radiobuttons {
 
 #seuraava {
     visibility: hidden;
-    margin-left: px;
 }
 
 #lukitse {
@@ -97,4 +97,13 @@ div#radiobuttons {
 
 .incorrectAnswer {
     color: red;
+}
+
+.kuvalahde {
+    font-size: 15px;
+}
+
+.ylatunniste {
+    font-size: 25px;
+    color: black;
 }
