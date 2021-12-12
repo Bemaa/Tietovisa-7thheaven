@@ -3,9 +3,10 @@ let answerbox = document.getElementById("vastaus").innerHTML = "";
 function anwser(){
 
 let rightAnswer1 = "Vastasit oikein!";
-let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kenttäpelaajaa ja maalivahti eli yhteensä 6pelaajaa kentällä. "
+let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kenttäpelaajaa ja maalivahti eli yhteensä kuusi pelaajaa kentällä. "
     if(document.getElementById("vastaus1").checked){
         document.getElementById("vastaus").innerHTML = wrongAnswer1;
+        document.getElementById("quiz").setAttribute("style"," border: 15px solid red;");
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -15,6 +16,7 @@ let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kentt�
     }
     if(document.getElementById("vastaus2").checked){
         document.getElementById("vastaus").innerHTML = wrongAnswer1;
+        document.getElementById("quiz").setAttribute("style"," border: 15px solid red;");
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -24,6 +26,7 @@ let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kentt�
     }
     if(document.getElementById("vastaus3").checked){
         document.getElementById("vastaus").innerHTML = wrongAnswer1;
+        document.getElementById("quiz").setAttribute("style"," border: 15px solid red;");
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -33,6 +36,7 @@ let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kentt�
     }
     if(document.getElementById("vastaus4").checked){
         document.getElementById("vastaus").innerHTML = rightAnswer1;
+        document.getElementById("quiz").setAttribute("style"," border: 15px solid green;");
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -42,6 +46,7 @@ let wrongAnswer1 = "Väärin. Jääkiekossa yhdellä joukkueella on viisi kentt�
     }
     if(document.getElementById("vastaus5").checked){
         document.getElementById("vastaus").innerHTML = wrongAnswer1;
+        document.getElementById("quiz").setAttribute("style"," border: 15px solid red;");
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
