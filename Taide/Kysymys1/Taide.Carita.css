@@ -3,14 +3,11 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(50, 0, 73);
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     background-image: url(../pictures/background-2743842_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-h2{
+h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 60px;
@@ -18,24 +15,22 @@ h2{
     padding-right: 30px;
     padding: 30px;
     background-color: rgb(244, 200, 255);
-    border-bottom: solid white;
-    border-top: solid white;
+    border: solid white;
+    border-radius: 15px;
 }
 h4{
     font-size: 20px;
-    position: right;
     float: right;
     margin-top: 10px;
     padding-right: 5px;
+    color:rgb(50, 0, 73)
 }
-div{
+.container-2{
     background-color: rgb(219, 127, 255);
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 10px solid rgb(255, 255, 255);
-    border-radius: 20px;
     font-size: 30px;
     color: rgb(33, 2, 63);
+    border: solid white;
+    border-radius: 15px;    
 }
 input[type="radio"]{
     margin: 0.3em;
@@ -55,11 +50,14 @@ p:nth-of-type(1){
     padding: 10px;
     padding-bottom: 30px;
     padding-top: 30px;
-    margin-top: -50px;
+    
 }
 .resize{
     width: 50%;
+    margin-left: 15%;
+    border-radius: 5%;
 }
+
 button{
     background-color: rgb(50, 0, 73);
     color: rgb(244, 200, 255);
