@@ -1,31 +1,20 @@
 body {
-    font-size: 2em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url("./Kuvat/Background_image.jpg");
+    background-repeat: no-repeat;
     background-size: 5000px;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    zoom: 85%;
+    height: 100%;
+    zoom: 75%;
 }
 
-h4 {
-    margin: 15px;
-    padding-left: 8px;
-    font-size: 30px;
-}
-
-h2 {
-    background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin: 25px;
+.quiz {
+    background-color: #FFBCE9;
+    border: 20px solid #921560;
+    border-radius: 20px;
+    width: 650px;
+    height: 1050px;
+    margin: auto;
+    margin-top: 40px;
 }
 
 div#kysymysVastaus {
@@ -35,17 +24,24 @@ div#kysymysVastaus {
     margin: 25px;
     border: none;
     border-radius: 0;
-
+    font-size: 25px;
 }
 
-div {
-    background-color: #FFBCE9;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 20px solid #921560;
-    border-radius: 20px;
-    padding-left: 25px;
+.otsikko {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
     padding-right: 25px;
+    padding-left: 25px;
+    margin: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tietoja {
+    margin: 15px;
+    padding-left: 8px;
+    font-size: 20px;
 }
 
 div#imageParent {
@@ -64,9 +60,7 @@ img#image1 {
 }
 
 label {
-    font-size: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-size: 25px;
 }
 
 input[type="radio"] {
@@ -75,21 +69,26 @@ input[type="radio"] {
     color: currentColor;
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid currentColor;
+    border: 1.5px solid currentColor;
     border-radius: 50%;
     font-size: 25px;
     margin-left: 25px;
-    margin-top: -1px;
-    vertical-align: middle;
-
 }
 
-button {
-    margin: 10px;
+div#radiobuttons {
+    margin-left: 50px;
 }
 
-button#seuraava {
+.buttons {
+    margin-top: 25px;
+}
+
+#seuraava {
     visibility: hidden;
+}
+
+#lukitse {
+    margin-left: 30px;
 }
 
 .correctAnswer {
@@ -98,4 +97,13 @@ button#seuraava {
 
 .incorrectAnswer {
     color: red;
+}
+
+.kuvalahde {
+    font-size: 15px;
+}
+
+.ylatunniste {
+    font-size: 25px;
+    color: black;
 }

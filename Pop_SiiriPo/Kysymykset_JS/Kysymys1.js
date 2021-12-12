@@ -1,8 +1,8 @@
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
-const CORRECT = "Oikein, hyvä hyvä! Minecraft on erittäin kuuluisa siitä, että peli on tehty vain neliöistä."
+const CORRECT = "Oikein, hyvä hyvä! Minecraft on kuuluisa siitä, että peli on tehty vain neliöistä."
 
-const INCORRECT = "Ei ihan! Tässä pelissä on muitakin muotoja kuin neliöitä."
+const INCORRECT = "Ei ihan! Kuvassa on Minecraft."
 
 function correctAnswer() {
 
