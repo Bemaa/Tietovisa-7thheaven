@@ -1,10 +1,13 @@
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
+let rightAnswer = "Oikein, Agricola kehitti Suomen kirjakielen!";
+let wrongAnswer = "Väärin meni. Yritä vielä uudelleen.";
+
 function correctAnswer() {
 
-    // Jos Nuuskamuikkunen valittu
+    // Jos Sauli Niinistö valittuna
     if(document.getElementById("vastaus1").checked) {
-        document.getElementById("ratkaisu").innerHTML = "Melkein! Nuuskamuikkunen ei ole kuvan henkilö.";
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -13,70 +16,68 @@ function correctAnswer() {
         document.getElementById("vastaus5").disabled = true;
     
         document.getElementById("v1").classList.add("incorrectAnswer");
-        document.getElementById("v2").classList.add("correctAnswer");
+        document.getElementById("v4").classList.add("correctAnswer");
 
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
-    // Jos Peter Pan valittu
+    // Jos Astrid Lindgren valittuna
     if(document.getElementById("vastaus2").checked) {
-        document.getElementById("ratkaisu").innerHTML = "Täydellistä! Kyseessä on Peter Pan!";
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-
-        document.getElementById("v2").classList.add("correctAnswer");
     
-        document.getElementById("ratkaisu").classList.add("correctAnswer");
+        document.getElementById("v2").classList.add("incorrectAnswer");
+        document.getElementById("v4").classList.add("correctAnswer");
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
-
-    // Jos Robin Hood valittu
-    if(document.getElementById("vastaus3").checked) {
-        document.getElementById("ratkaisu").innerHTML = "Ei ihan! Robin Hood ei ole kuvan henkilö.";
-
+    
+    // Jos J. L. Runeberg valittuna
+        if(document.getElementById("vastaus3").checked) {
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
+    
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-
+        
         document.getElementById("v3").classList.add("incorrectAnswer");
-        document.getElementById("v2").classList.add("correctAnswer");
+        document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
-
-    // Jos Risto Reipas valittu
+    // Jos Mikael Agricola valittuna
     if(document.getElementById("vastaus4").checked) {
-        document.getElementById("ratkaisu").innerHTML = "Väärin meni. Risto Reipas ei ole kyseinen henkilö.";
+        document.getElementById("ratkaisu").innerHTML = rightAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-
-        document.getElementById("v4").classList.add("incorrectAnswer");
-        document.getElementById("v2").classList.add("correctAnswer");
     
+        document.getElementById("v4").classList.add("correctAnswer");
+
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
-
-    // Jos The Ville Vallaton valittu
+    // Jos Elias Lönnrot valittuna
     if(document.getElementById("vastaus5").checked) {
-        document.getElementById("ratkaisu").innerHTML = "Aijai! Ville Vallaton ei ole kuvan henkilö.";
-
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
+    
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-
+        
         document.getElementById("v5").classList.add("incorrectAnswer");
-        document.getElementById("v2").classList.add("correctAnswer");
+        document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }

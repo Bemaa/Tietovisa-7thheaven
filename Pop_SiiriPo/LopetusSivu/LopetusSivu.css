@@ -1,10 +1,11 @@
+/* Siiri Poropudas */
+
 body {
     background-image: url("../Kuvat/Background_image.jpg");
     background-repeat: no-repeat;
     background-size: 5000px;
     background-position: center;
     height: 100%;
-    zoom: 75%;
 }
 
 .quiz {
