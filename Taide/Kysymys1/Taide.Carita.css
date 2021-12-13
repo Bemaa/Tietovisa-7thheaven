@@ -1,11 +1,12 @@
 body{
-    font-size: 70px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
     background-color: rgb(50, 0, 73);
     height: 100vh;
     background-image: url(../pictures/background-2743842_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    zoom: 75%;
 }
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -30,33 +31,38 @@ h4{
     font-size: 30px;
     color: rgb(33, 2, 63);
     border: solid white;
-    border-radius: 15px;    
+    border-radius: 15px; 
+    margin-bottom: 5px;   
 }
 input[type="radio"]{
     margin: 0.3em;
-    font: inherit;
+    font: 30px;
     color: currentColor;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border: 0.15em solid currentColor;
     border-radius: 50%;
+    
 }
 p:nth-of-type(1){
     background-color: rgb(244, 200, 255);
     border-bottom : 20px solid rgb(255, 255, 255);
     border-width: 10px;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     padding: 10px;
     padding-bottom: 30px;
     padding-top: 30px;
-    
 }
 .resize{
     width: 45%;
     margin-left: 15%;
     border-radius: 5%;
 }
+label{
+    font-size: 20px;
+}
+
 button{
     background-color: rgb(50, 0, 73);
     color: rgb(244, 200, 255);
@@ -67,9 +73,10 @@ button{
     font-size: 15px;
     padding: 15px;
     margin: 0 auto;
+    margin-bottom: 30px;
     display: block;
 }
-a{
+.next{
     font-size: 15px;
     text-decoration: none;
     border-style:solid;
@@ -80,4 +87,9 @@ a{
     background-color: rgb(50, 0, 73);
     float: right;
     margin-left:80px;
+}
+.navbar-brand{
+    color: rgb(219, 127, 255);
+    font-size: 15px;
+    height: 15px;
 }
