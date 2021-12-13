@@ -11,6 +11,38 @@
     <title>Kysymyspohja</title>
 </head>
 <body id="kysymyspohja">
+    
+    <ul class="nav ylatunniste bg-light">
+        <li class="nav-item">
+            <a class="nav-link" href="../">Etusivulle</a>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" href=''>Luonnontiede</a>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" href=''>Urheilu</a>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" href=''>Taide</a>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" href=''>Popkulttuuri</a>
+        </li>  
+  
+        <li class="nav-item">
+            <a class="nav-link" href=''>Historia</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href=''>Tietoja</a>
+          </li>
+  
+      </ul>
+  
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -20,22 +52,31 @@
                     <h4 id="kysymysNro">Kysymys 1/5</h4>
                 <div class="content">
                     <div class="container-2">
-                        
                             <div id="quiz">
+
                                 <p id="image">
                                     <img  class="resize" src="../pictures/MonaLisa.jpg">
                                     <br>Kuka on maalannut Mona Lisan?
                                 </p>
                             
-                                <input class="container" type="radio" name="anwser" id="vastaus1"><label for="radio">A) Leonardo Da Vinci </label><br>
-                                <input class="container" type="radio" name="anwser" id="vastaus2"><label for="radio">B) Pablo Picasso</label><br>
-                                <input class="container" type="radio" name="anwser" id="vastaus3"><label for="radio">C) Vincent Van Gogh </label><br>
-                                <input class="container" type="radio" name="anwser" id="vastaus4"><label for="radio">D) Akseli Gallen-Kallela </label><br>
-                                <input class="container" type="radio" name="anwser" id="vastaus5"><label for="radio">E) Michelangelo </label><br><br>
-                    
-                                <button onclick="answer()">Lukitse vastaus</button>
-                               
+                                <input class="container" type="radio" name="anwser" id="vastaus1">
+                                <label for="radio">A) Leonardo Da Vinci </label><br>
+
+                                <input class="container" type="radio" name="anwser" id="vastaus2">
+                                <label for="radio">B) Pablo Picasso</label><br>
+
+                                <input class="container" type="radio" name="anwser" id="vastaus3">
+                                <label for="radio">C) Vincent Van Gogh </label><br>
+
+                                <input class="container" type="radio" name="anwser" id="vastaus4">
+                                <label for="radio">D) Akseli Gallen-Kallela </label><br>
+
+                                <input class="container" type="radio" name="anwser" id="vastaus5">
+                                <label for="radio">E) Michelangelo </label><br><br>
+
                                 <a class="next" href="../Kysymys2/Kysymys2.html"> Seuraava kysymys</a>
+                                <button onclick="answer()">Lukitse vastaus</button>
+                                
                                 
 
                             </div>
@@ -45,5 +86,11 @@
              </div>
         </div>
     </div>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Carita Niskanen</a>
+    </div>
+</nav>
+
 </body>
 </html>

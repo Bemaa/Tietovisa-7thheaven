@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historian tietovisa</title>
     <link rel="stylesheet" href="../Historia/historia.css" />
-    <script src="../Historia/historia.js" defer></script>
+    
+    <script src="..\Historia\historia_ekasivu.js" defer></script>
   </head>
   <body>
       <div id="quiz">
@@ -33,9 +34,10 @@
         <input type="radio" id="vastaus5" name="henkilö">
         <label for="vastaus5" id="v5">Elias Lönnrot</label><br>
 
-        <a href="" class="btn1" button id="lukitse">Lukitse vastaus</a>
-        <a href="toinenKysymys.html" button class="btn btn-outline-secondary btn-lg">Seuraava kysymys</a>
-    </div>
+        <class="btn1" button class="btn1 btn-outline-secondary btn-lg" button id="lukitse" onclick="correctAnswer()">Lukitse vastaus</a>
+        <a href="Historia\toinenKysymys.html" class="btn2" button class="btn btn-outline-secondary btn-lg">Seuraava kysymys</a>
+    
+      </div>
     
   </body>
 </html>
