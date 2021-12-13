@@ -2,7 +2,7 @@
 
 
 /*
-Asetetaan "Background_image" taustaksi keskelle ja tehdään siitä 5000 pikselin suuruinen, jotta se täyttää koko sivun. Säädetään myös kuvan pituutta, jotta se täyttää koko sivun pystysuunnassa.
+Asetetaan "Background_image" taustaksi keskelle ja säätetään kuvaa, jotta se ei toistu. Tehdään kuvasta 5000 pikselin suuruinen, jotta se täyttää koko sivun. Säädetään myös kuvan pituutta, jotta se täyttää koko sivun pystysuunnassa.
 */
 body {
     background-image: url("../Kuvat/Background_image.jpg");
