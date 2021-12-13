@@ -1,3 +1,8 @@
+/*
+    Created on : December, 2021
+    Author     : Siiri Poropudas
+*/
+
 body {
     background-image: url("../Kuvat/Background_image.jpg");
     background-repeat: no-repeat;
@@ -39,17 +44,17 @@ body {
 }
 
 .kiitos {
-    margin-top: 35px;
+    margin-top: -10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-}
-
-.ylatunniste {
-    font-size: 25px;
-    color: black;
 }
 
 .etusivulle {
     float: right;
+}
+
+.pisteet {
+    text-align: center;
+    margin-top: -15px;
 }

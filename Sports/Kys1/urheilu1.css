@@ -14,16 +14,18 @@ body{
     font-size: 60px;
     letter-spacing: 2px;
     color: #FF8243;
+    font-family: monospace, monaco, sans-serif;
     
 }
 
 #subhead{
     font-size: 30px;
+    font-family: monospace, courier new, sans-serif;
+ 
 }
 
 #kysymykset{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-family: monospace, courier new, sans-serif;
     padding: 15px;
 }
 
