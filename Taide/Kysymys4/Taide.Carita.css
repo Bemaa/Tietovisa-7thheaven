@@ -70,3 +70,19 @@ button{
     margin: 0 auto;
     display: block;
 }
+a{
+    font-size: 15px;
+    text-decoration: none;
+    border-style:solid;
+    border-color: rgb(244, 200, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(50, 0, 73);
+    float: right;
+    margin-left:80px;
+}
+.info{
+    padding:20px;
+    text-align:center;
+}
