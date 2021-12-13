@@ -1,14 +1,13 @@
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
-const CORRECT = "Oikein, Agricola kehitti Suomen kirjakielen!"
-
-const INCORRECT = "Väärin meni. Yritä vielä uudelleen."
+let rightAnswer = "Oikein, Agricola kehitti Suomen kirjakielen!";
+let wrongAnswer = "Väärin meni. Yritä vielä uudelleen.";
 
 function correctAnswer() {
 
     // Jos Sauli Niinistö valittuna
     if(document.getElementById("vastaus1").checked) {
-        document.getElementById("ratkaisu").innerHTML = INCORRECT;
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -24,7 +23,7 @@ function correctAnswer() {
 
     // Jos Astrid Lindgren valittuna
     if(document.getElementById("vastaus2").checked) {
-        document.getElementById("ratkaisu").innerHTML = INCORRECT;
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -39,8 +38,8 @@ function correctAnswer() {
     }
     
     // Jos J. L. Runeberg valittuna
-        if(document.getElementById("vastaus2").checked) {
-        document.getElementById("ratkaisu").innerHTML = INCORRECT;
+        if(document.getElementById("vastaus3").checked) {
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
     
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -54,8 +53,8 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
     // Jos Mikael Agricola valittuna
-    if(document.getElementById("vastaus2").checked) {
-        document.getElementById("ratkaisu").innerHTML = INCORRECT;
+    if(document.getElementById("vastaus4").checked) {
+        document.getElementById("ratkaisu").innerHTML = rightAnswer;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
@@ -68,8 +67,8 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
     // Jos Elias Lönnrot valittuna
-    if(document.getElementById("vastaus2").checked) {
-        document.getElementById("ratkaisu").innerHTML = INCORRECT;
+    if(document.getElementById("vastaus5").checked) {
+        document.getElementById("ratkaisu").innerHTML = wrongAnswer;
     
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
