@@ -113,7 +113,6 @@ function correctAnswer1() {
         document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
-
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
@@ -226,7 +225,6 @@ function correctAnswer2() {
         document.getElementById("v2").classList.add("correctAnswer");
         
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
-
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
@@ -337,7 +335,6 @@ function correctAnswer3() {
         document.getElementById("v3").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
-
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
@@ -561,7 +558,6 @@ function correctAnswer5(){
         document.getElementById("v1").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
-
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
