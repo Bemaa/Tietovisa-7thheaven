@@ -41,7 +41,7 @@
           </li>
   
       </ul>
-      
+
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -55,6 +55,7 @@
                                 <p id="image">
                                     <img src="../pictures/Kalevala.jpg" class="resize">
                                     <br>Ketkä taistelevat tässä kuvassa?
+                                    <div class="img-thumbnail" id="info"></div>
                                 </p>
                             
                                 <input class="container" type="radio" name="anwser" id="vastaus1">
@@ -70,7 +71,7 @@
                                 <label for="radio">D) Ilmarinen ja Louhi </label><br>
                                 
                                 <a class="next" href="../Kysymys4/Kysymys4.html"> Seuraava kysymys</a>
-                                <button onclick="answer()">Lukitse vastaus</button>
+                                <button type="button" id="vahvista" onclick="answer3()">Lukitse vastaus</button>
                                 
 
                             </div>
@@ -85,6 +86,7 @@
           <a class="navbar-brand">Carita Niskanen</a>
         </div>
     </nav>
-    
+
+<script src="../Kysymykset.js"></script>
 </body>
 </html>
