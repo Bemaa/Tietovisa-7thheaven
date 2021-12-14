@@ -3,6 +3,8 @@ document.getElementById("lukitse").addEventListener("click", correctAnswer);
 let rightAnswer = "Kyllä, Isossa-Britanniassa!";
 let wrongAnswer = "Väärin, yritä vielä!";
 
+let pisteet = 0
+
 function correctAnswer() {
 
     // Jos "Suomessa" valittuna
@@ -46,7 +48,9 @@ function correctAnswer() {
         
         document.getElementById("v3").classList.add("correctAnswer");
     
-        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++
     }
     // Jos "Italiassa" valittuna
     if(document.getElementById("vastaus4").checked) {
@@ -67,4 +71,7 @@ function correctAnswer() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet3", pisteet);
+
 }

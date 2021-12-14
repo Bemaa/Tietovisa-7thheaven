@@ -3,6 +3,8 @@ document.getElementById("lukitse").addEventListener("click", correctAnswer);
 let rightAnswer = "Oikein, esihistoriahan se!";
 let wrongAnswer = "Väärin. Älä luovuta!";
 
+let pisteet = 0
+
 function correctAnswer() {
 
     // Jos Keskiaika valittuna
@@ -64,7 +66,9 @@ function correctAnswer() {
     
         document.getElementById("v4").classList.add("correctAnswer");
 
-        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++
     }
     // Jos Renessanssi valittuna
     if(document.getElementById("vastaus5").checked) {
@@ -85,4 +89,7 @@ function correctAnswer() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet2", pisteet);
+
 }

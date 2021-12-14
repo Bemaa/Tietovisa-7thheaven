@@ -3,6 +3,8 @@ document.getElementById("lukitse").addEventListener("click", correctAnswer);
 let rightAnswer = "Oikein, Agricola kehitti Suomen kirjakielen!";
 let wrongAnswer = "Väärin meni. Seuraavan kysymyksen kohdalla onnaa!";
 
+let pisteet = 0
+
 function correctAnswer() {
 
     // Jos Sauli Niinistö valittuna
@@ -64,7 +66,9 @@ function correctAnswer() {
     
         document.getElementById("v4").classList.add("correctAnswer");
 
-        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++
     }
     // Jos Elias Lönnrot valittuna
     if(document.getElementById("vastaus5").checked) {
@@ -85,6 +89,9 @@ function correctAnswer() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet1", pisteet);
+
 }
 
 

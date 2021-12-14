@@ -3,6 +3,8 @@ document.getElementById("lukitse").addEventListener("click", correctAnswer);
 let rightAnswer = "Hienoa, sinä osaat!";
 let wrongAnswer = "Väärin. Hyvä yritys!";
 
+let pisteet = 0
+
 function correctAnswer() {
 
     // Jos "Turku" valittuna
@@ -17,7 +19,9 @@ function correctAnswer() {
 
         document.getElementById("v1").classList.add("correctAnswer");
 
-        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++
     }
 
     // Jos "Oulu" valittuna
@@ -87,4 +91,7 @@ function correctAnswer() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet5", pisteet);
+
 }

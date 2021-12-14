@@ -3,6 +3,8 @@ document.getElementById("lukitse").addEventListener("click", correctAnswer);
 let rightAnswer = "Loistavaa, tiesit vastauksen!";
 let wrongAnswer = "Väärin. Kokeile seuraavaa kysymystä!";
 
+let pisteet = 0
+
 function correctAnswer() {
 
     // Jos "1915" valittuna
@@ -49,7 +51,9 @@ function correctAnswer() {
 
         document.getElementById("v3").classList.add("correctAnswer");
     
-        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++
     }
 
     // Jos "1901" valittuna
@@ -87,4 +91,7 @@ function correctAnswer() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet4", pisteet);
+
 }
