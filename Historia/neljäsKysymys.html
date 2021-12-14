@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historian tietovisa</title>
-    <link rel="stylesheet" href="historia.css" />
+    <link rel="stylesheet" href="../Historia/historia.css" />
+
+    <script src="..\Historia\historia_neljässivu.js" defer></script>
   </head>
   <body>
       <div id="quiz">
         <h4>Kysymys 4/5</h4>
         <h2>Historia</h2>
 
-        <div id="kysymysVastaus">
+        <div id="kysymys">
           <p class="kysymys">Minä vuonna Suomi itsenäistyi?</p>
+        </div>
+
+        <div id="vastaus">
           <p id=ratkaisu></p>
         </div>
 
@@ -31,11 +36,10 @@
 
         <input type="radio" id="vastaus5" />
         <label for="vastaus5">1989</label><br />
-
-        <a href="" class="btn1" button id="lukitse">Lukitse kysymys</a>
+        <br>
+        <class="btn1" button class="btn1 btn-outline-secondary btn-lg" button id="lukitse" onclick="correctAnswer()">Lukitse vastaus</a><br>
         <a href="viidesKysymys.html" class="btn2" button class="btn btn-outline-secondary btn-lg">Seuraava kysymys</a>
 
     </div>
-    <script src="historia.js"></script>
   </body>
 </html>

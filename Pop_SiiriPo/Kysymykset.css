@@ -1,5 +1,11 @@
-/* Siiri Poropudas */
+/*
+    Created on : December, 2021
+    Author     : Siiri Poropudas
+*/
 
+/*
+Asetetaan "Background_image" taustaksi keskelle ja säätetään kuvaa, jotta se ei toistu. Tehdään kuvasta 5000 pikselin suuruinen, jotta se täyttää koko sivun. Säädetään myös kuvan pituutta, jotta se täyttää koko sivun pystysuunnassa. Määritetään sivun zoom 75 prosenttiin, jotta näkymä olisi parempi.
+*/
 body {
     background-image: url("./Kuvat/Background_image.jpg");
     background-repeat: no-repeat;
@@ -9,6 +15,9 @@ body {
     zoom: 75%;
 }
 
+/*
+Asetetaan "quiz" laatikon tasutaväriksi vaaleanpunainen sekä reunoiksi tylppä 20:nen pikselin suuruinen purppura viiva. Määritetään "quiz" laatikko 650 pikselin levyiseksi ja 1050 pikselin pituiseksi. Määritetään margin kyseiselle laatikolle automaattisesti sekä margin-top 40 pikselin suuruiseksi.
+*/
 .quiz {
     background-color: #FFBCE9;
     border: 20px solid #921560;
@@ -19,16 +28,20 @@ body {
     margin-top: 40px;
 }
 
+/*
+Säädetään kysymyslaatikon taustaväriksi valkoinen sekä keskitetään teksti keskelle laatikkoa. Säädetään paddingia 10 pikselin kokoiseksi sekä margin 25 pikselin suuruiseksi. 
+*/
 div#kysymysVastaus {
     background-color: white;
     text-align: center;
     padding: 10px;
     margin: 25px;
-    border: none;
-    border-radius: 0;
     font-size: 25px;
 }
 
+/*
+Asetetaan otsikolle taustaväriksi valkoinen ja keskitetään se keskelle "quiz" laatikkoa. Säädetään otsikolle yleistä paddingia 20 pikseliä sekä paddingia oikealle ja vasemmalle 25 pikseliä. Asetetaan myös marginia 25 pikselin suuruiseksi. Tehdään fontista lihavoitu sekä 40 pikselin kokoinen.
+*/
 .otsikko {
     background-color: white;
     text-align: center;
@@ -40,11 +53,15 @@ div#kysymysVastaus {
     font-weight: bold;
 }
 
+/*
+Määritellään myös fontti koko 20 pikselin suuruiseksi ja margin 25 pikselin suuruiseksi. Asetetaan myös paddingia kahdeksan pikselin verran.
+*/
 .tietoja {
     margin: 15px;
     padding-left: 8px;
     font-size: 20px;
 }
+
 
 div#imageParent {
     background-color: white;
@@ -81,6 +98,9 @@ div#radiobuttons {
     margin-left: 50px;
 }
 
+/*
+Säädetään napeille margin-top 25 pikselin suuruiseksi.
+*/
 .buttons {
     margin-top: 25px;
 }
@@ -107,5 +127,4 @@ div#radiobuttons {
 
 .ylatunniste {
     font-size: 25px;
-    color: black;
 }

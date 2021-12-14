@@ -7,10 +7,11 @@ input[type="radio"]{
     border: 0.15em solid currentColor;
     border-radius: 50%;
 }
-#kysymys1Body{
+#kysymys1Body,#kysymys2Body,#kysymys3Body,#kysymys4Body,#kysymys5Body{
     text-align: center;
     background-image: url("../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
     background-size: cover;
+    padding-bottom: 5em;
 }
 #numero{
     font-size: 20px;

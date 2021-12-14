@@ -1,4 +1,7 @@
-// Siiri Poropudas
+/*
+    Created on : December, 2021
+    Author     : Siiri Poropudas
+*/
 
 const CORRECT1 = "Oikein, hyvä hyvä! Minecraft on kuuluisa siitä, että peli on tehty vain neliöistä."
 const INCORRECT1 = "Ei ihan! Kuvassa on Minecraft."
@@ -8,6 +11,8 @@ const INCORRECT3 = "Hupsis! Aku Ankan siskonpoikien nimet ovat Tupu, Hupu ja Lup
 
 const CORRECT4 = "Mahtavaa! Tämähän on kaikkien rakastaman Walt Disney studion logo!"
 const INCORRECT4 = "Voi ei! Tämä on Disney studion logo."
+
+let pisteet = 0
 
 /*
 Funktio 1. kysymykselle, joka tarkastaa minkä vastauksen käyttäjä on valinnut ja tuottaa elementin sivulle riippuen onko vastaus väärä vai oikea. Kun funktio on käynyt if-lauseet läpi, lopuksi se tuo "seuraava" napin esiin näkyville käyttäjälle sekä lukitsee "lukitse" napin, ettei sitä voi painaa.
@@ -87,6 +92,8 @@ function correctAnswer1() {
         document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++;
     }
 
     /*
@@ -106,19 +113,19 @@ function correctAnswer1() {
         document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
-
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet1", pisteet);
 }
 
 /*
 Funktio 2. kysymykselle, joka tarkastaa minkä vastauksen käyttäjä on valinnut ja tuottaa elementin sivulle riippuen onko vastaus väärä vai oikea. Kun funktio on käynyt if-lauseet läpi, lopuksi se tuo "seuraava" napin esiin näkyville käyttäjälle sekä lukitsee "lukitse" napin, ettei sitä voi painaa.
 */
 function correctAnswer2() {
-
     /*
     Jos käyttäjä on valinnut vastauksen "Nuuskamuikkunen".
     Vastaus on väärä, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan väärin. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri punaiseksi sekä oikean vastauksen väri vihreäksi. Muutetaan myös ilmoitustekstin väri punaiseksi.
@@ -156,6 +163,8 @@ function correctAnswer2() {
         document.getElementById("v2").classList.add("correctAnswer");
         
         document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++;
     }
     
     /*
@@ -221,13 +230,15 @@ function correctAnswer2() {
     document.getElementById("seuraava").style.visibility = 'visible';
     
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet2", pisteet);
 }
 
 /*
 Funktio 3. kysymykselle, joka tarkastaa minkä vastauksen käyttäjä on valinnut ja tuottaa elementin sivulle riippuen onko vastaus väärä vai oikea. Kun funktio on käynyt if-lauseet läpi, lopuksi se tuo "seuraava" napin esiin näkyville käyttäjälle sekä lukitsee "lukitse" napin, ettei sitä voi painaa.
 */
 function correctAnswer3() {
-
+ 
     /*
     Jos käyttäjä on valinnut vastauksen "Tatu, Lapu ja Hotu".
     Vastaus on väärä, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan väärin. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri punaiseksi sekä oikean vastauksen väri vihreäksi. Muutetaan myös ilmoitustekstin väri punaiseksi.
@@ -253,7 +264,6 @@ function correctAnswer3() {
     Vastaus on väärä, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan väärin. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri punaiseksi sekä oikean vastauksen väri vihreäksi. Muutetaan myös ilmoitustekstin väri punaiseksi.
     */
     if(document.getElementById("vastaus2").checked) {
-
         document.getElementById("ratkaisu").innerHTML = INCORRECT3;
 
         document.getElementById("vastaus1").disabled = true;
@@ -285,6 +295,8 @@ function correctAnswer3() {
         document.getElementById("v3").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++;
     }
 
     /*
@@ -328,6 +340,8 @@ function correctAnswer3() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet3", pisteet);
 }
 
 /*
@@ -416,6 +430,7 @@ function correctAnswer4() {
     Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
     */
     if(document.getElementById("vastaus5").checked) {
+
         document.getElementById("ratkaisu").innerHTML = CORRECT4;
 
         document.getElementById("vastaus1").disabled = true;
@@ -427,24 +442,27 @@ function correctAnswer4() {
         document.getElementById("v5").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++;
     }
 
     if(document.getElementById("image1").style.display != 'show') {
         
         document.getElementById("image1").style.display = 'block';
         document.getElementById("image2").style.display = 'none'
-    };
+    }
 
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet4", pisteet);
 }
 
 /*
 Funktio 5. kysymykselle, joka tarkastaa minkä vastauksen käyttäjä on valinnut ja tuottaa elementin sivulle riippuen onko vastaus väärä vai oikea. Kun funktio on käynyt if-lauseet läpi, lopuksi se tuo "seuraava" napin esiin näkyville käyttäjälle sekä lukitsee "lukitse" napin, ettei sitä voi painaa.
 */
-function correctAnswer5() {
-
+function correctAnswer5(){
     /*
     Jos käyttäjä on valinnut vastauksen "Nasu".
     Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
@@ -461,6 +479,8 @@ function correctAnswer5() {
         document.getElementById("v1").classList.add("correctAnswer");
 
         document.getElementById("ratkaisu").classList.add("correctAnswer");
+
+        pisteet++;
     }
 
     /*
@@ -543,4 +563,10 @@ function correctAnswer5() {
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
+
+    localStorage.setItem("pisteet5", pisteet);
 }
+
+let lopputulos = parseInt(localStorage.getItem('pisteet1'))+ parseInt(localStorage.getItem('pisteet2'))+ parseInt(localStorage.getItem('pisteet3'))+ parseInt(localStorage.getItem('pisteet4'))+ parseInt(localStorage.getItem('pisteet5'));
+
+document.getElementById("pisteet").innerHTML = "Pisteesi: " + lopputulos;

@@ -1,8 +1,7 @@
-/* kommentti */
-
 body {
+    background-image: url("../Historia/Kuvat/books.jpg"); /* Taustakuvan lähde: https://pixabay.com/fi/photos/kirjoja-kirjasto-lukeminen-koulutus-2606859/ */
     font-size: 3em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
     min-height: 100vh;
     display: grid;
@@ -10,17 +9,17 @@ body {
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: antiquewhite;
 }
 h4 {
     margin: 15px;
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    background-color: rgb(216, 160, 58);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 180, 0);
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     padding: 20px;
     padding-right: 25px;
@@ -28,8 +27,8 @@ h2 {
     margin: 25px;
 }
 
-div#kysymysVastaus {
-    background-color: rgb(216, 160, 58);
+div#kysymys {
+    background-color: rgb(195, 154, 100);
     text-align: center;
     padding: 10px;
     margin: 25px;
@@ -37,19 +36,29 @@ div#kysymysVastaus {
     border-radius: 0;
 }
 
+div#vastaus {
+    background-color: burlywood;
+    text-align: center;
+    padding: 4px;
+    margin: 25px;
+    border: none;
+    border-radius: 0;
+}
+
 div {
-    background-color: #a5744c;
+    background-color: burlywood;
     grid-column: 2/3;
     grid-row: 2/3;
     border: 20px solid #4b1500;
     border-radius: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
 }
 
 label {
-    font-size: 33px;
-    padding: 25px;
+    font-size: 35px;
+    padding: 15px;
     text-align: right;
 }
 
@@ -68,8 +77,8 @@ input[type="radio"] {
 
 .btn1 {
     font-size: 2.4rem;
-    padding: 2 rem 0;
-    width: 30rem;
+    padding: 3 rem 0;
+    width: 0rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
@@ -90,7 +99,19 @@ input[type="radio"] {
     border-radius: 4px;
 }
 
-p#ratkaisu.incorrectAnswer {
-    padding-top: 5rem;
+.tulokset {
+    padding: 30px;
+    text-align: center;
+    font-size: 70px;
+}
 
+.pisteesi {
+    font-size: 40px;
+}
+
+.kiitos {
+    padding: 30px;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }

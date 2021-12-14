@@ -1,13 +1,13 @@
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
-let rightAnswer = "Oikein, Agricola kehitti Suomen kirjakielen!";
-let wrongAnswer = "Väärin meni. Seuraavan kysymyksen kohdalla onnaa!";
+let rightAnswer = "Oikein, esihistoriahan se!";
+let wrongAnswer = "Väärin. Älä luovuta!";
 
 let pisteet = 0
 
 function correctAnswer() {
 
-    // Jos Sauli Niinistö valittuna
+    // Jos Keskiaika valittuna
     if(document.getElementById("vastaus1").checked) {
         document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
@@ -23,7 +23,7 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
-    // Jos Astrid Lindgren valittuna
+    // Jos Nykyaika valittuna
     if(document.getElementById("vastaus2").checked) {
         document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
@@ -39,7 +39,7 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
     
-    // Jos J. L. Runeberg valittuna
+    // Jos Varhaishistoria valittuna
         if(document.getElementById("vastaus3").checked) {
         document.getElementById("ratkaisu").innerHTML = wrongAnswer;
     
@@ -54,7 +54,7 @@ function correctAnswer() {
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
-    // Jos Mikael Agricola valittuna
+    // Jos Esihistoria valittuna
     if(document.getElementById("vastaus4").checked) {
         document.getElementById("ratkaisu").innerHTML = rightAnswer;
 
@@ -70,7 +70,7 @@ function correctAnswer() {
 
         pisteet++
     }
-    // Jos Elias Lönnrot valittuna
+    // Jos Renessanssi valittuna
     if(document.getElementById("vastaus5").checked) {
         document.getElementById("ratkaisu").innerHTML = wrongAnswer;
     
@@ -90,9 +90,6 @@ function correctAnswer() {
 
     document.getElementById("lukitse").disabled = true;
 
-    localStorage.setItem("pisteet1", pisteet);
+    localStorage.setItem("pisteet2", pisteet);
 
 }
-
-
-
