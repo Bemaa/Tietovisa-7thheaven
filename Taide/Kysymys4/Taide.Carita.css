@@ -1,6 +1,6 @@
 body{
-    font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
     background-color: rgb(50, 0, 73);
     height: 100vh;
     background-image: url(../pictures/background-2743842_960_720.jpg);
@@ -73,6 +73,7 @@ button{
     font-size: 15px;
     padding: 15px;
     margin: 0 auto;
+    margin-bottom: 30px;
     display: block;
 }
 .next{
@@ -86,7 +87,6 @@ button{
     background-color: rgb(50, 0, 73);
     float: right;
     margin-left:80px;
-    margin-bottom: 50px;
 }
 .navbar-brand{
     color: rgb(219, 127, 255);
