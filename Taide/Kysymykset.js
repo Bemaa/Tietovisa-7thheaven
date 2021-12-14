@@ -15,8 +15,8 @@ const WRONG3 = "Hitsit, väärin meni! Kuvassa taistelevat Kalevalan päähenkil
 const CORRECT4 = "Tietenkin hurmaava Robin Packalen, hyvin tiedetty!"
 const WRONG4 = "Väärin, oikea vastaus on Robin Packalen."
 
-const CORRECT5 = ""
-const WRONG5 = ""
+const CORRECT5 = "Kyllä, juuri näin! Tove Jansson oli suomenruotsalainen kirjailija, taidemaalari ja sarjakuvataiteilija. Muumit syntyivät 1940. "
+const WRONG5 = "Hups, väärin! Oikea vastaus on Tove Jansson."
 
 let points = 0;
 
@@ -341,3 +341,66 @@ function answer4(){
     document.getElementById("next").style.visibility = 'visible';
 }
 
+function answer5(){
+
+    if (document.getElementById("vastaus1").checked){
+        document.getElementById("info").innerHTML = WRONG5;
+
+        document.getElementById("vastaus1").disabled = true;
+        document.getElementById("vastaus2").disabled = true;
+        document.getElementById("vastaus3").disabled = true;
+        document.getElementById("vastaus4").disabled = true;
+    
+        document.getElementById("vastaus3").classList.add("wrongAnswer");
+
+        document.getElementById("info").classList.add("wrongAnswer");
+    }
+
+    if (document.getElementById("vastaus2").checked){
+        document.getElementById("info").innerHTML = WRONG5;
+
+        document.getElementById("vastaus1").disabled = true;
+        document.getElementById("vastaus2").disabled = true;
+        document.getElementById("vastaus3").disabled = true;
+        document.getElementById("vastaus4").disabled = true;
+    
+        document.getElementById("vastaus2").classList.add("wrongAnswer");
+
+        document.getElementById("info").classList.add("wrongAnswer");
+    }
+
+    if (document.getElementById("vastaus3").checked){
+        document.getElementById("info").innerHTML = CORRECT5;
+
+        document.getElementById("vastaus1").disabled = true;
+        document.getElementById("vastaus2").disabled = true;
+        document.getElementById("vastaus3").disabled = true;
+        document.getElementById("vastaus4").disabled = true;
+
+        document.getElementById("vastaus3").classList.add("correctAnswer");
+
+        document.getElementById("info").classList.add("correctAnswer");
+
+        points++;
+        localStorage.setItem("vastaus3",  points);
+    }
+
+    if (document.getElementById("vastaus4").checked){
+        document.getElementById("info").innerHTML = CORRECT5;
+
+        document.getElementById("vastaus1").disabled = true;
+        document.getElementById("vastaus2").disabled = true;
+        document.getElementById("vastaus3").disabled = true;
+        document.getElementById("vastaus4").disabled = true;
+
+        document.getElementById("vastaus3").classList.add("correctAnswer");
+
+        document.getElementById("info").classList.add("correctAnswer");
+
+        points++;
+        localStorage.setItem("vastaus4",  points);
+    }
+
+
+    document.getElementById("next").style.visibility = 'visible';
+}

@@ -1,0 +1,67 @@
+/* 
+    Made : 12/2021
+    Author : Carita Niskanen
+*/
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: rgb(50, 0, 73);
+    height: 100vh;
+    background-image: url(../pictures/background-2743842_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    zoom: 75%;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(33, 2, 63);
+    padding-right: 30px;
+    padding: 30px;
+    background-color: rgb(244, 200, 255);
+    border: solid white;
+    border-radius: 15px;
+}
+h4{
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    padding-right: 5px;
+    color:rgb(50, 0, 73)
+}
+.container-2{
+    background-color: rgb(219, 127, 255);
+    font-size: 30px;
+    color: rgb(33, 2, 63);
+    border: solid white;
+    border-radius: 15px; 
+    margin-bottom: 5px;   
+}
+input[type="radio"]{
+    margin: 0.3em;
+    font: 30px;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    
+}
+p:nth-of-type(1){
+    background-color: rgb(244, 200, 255);
+    border-bottom : 20px solid rgb(255, 255, 255);
+    border-width: 10px;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.navbar-brand{
+    color: rgb(219, 127, 255);
+    height: 20px;
+}
