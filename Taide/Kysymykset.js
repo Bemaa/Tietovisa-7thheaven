@@ -18,7 +18,7 @@ const WRONG4 = "Väärin, oikea vastaus olisi ollut Robin Packalen."
 const CORRECT5 = ""
 const WRONG5 = ""
 
-let points = 0
+let points = 0;
 
 /*
 
@@ -39,6 +39,7 @@ function answer1(){
         document.getElementById("info").classList.add("correctAnswer");
 
         points++;
+        localStorage.setItem("vastaus1",  points);
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -96,6 +97,7 @@ function answer1(){
 
         document.getElementById("info").classList.add("wrongAnswer");
     }
+
 }
 
 function answer2(){
@@ -142,7 +144,7 @@ function answer2(){
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
-        
+        localStorage.setItem("vastaus3",  pisteet);
         points++;
     }
 
@@ -206,6 +208,7 @@ function answer3(){
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
+        localStorage.setItem("vastaus2",  pisteet);
         
         points++;
     }
@@ -325,6 +328,7 @@ function answer4(){
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
+        localStorage.setItem("vastaus4",  pisteet);
         
         points++;
     }

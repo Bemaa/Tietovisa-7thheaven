@@ -55,7 +55,7 @@ p:nth-of-type(1){
     padding-top: 30px;
 }
 .resize{
-    width: 45%;
+    width: 60%;
     margin-left: 15%;
     border-radius: 5%;
 }
@@ -64,6 +64,10 @@ label{
 }
 #info{
     font-size: 20px;
+    text-align: center;
+}
+#lähde{
+    font-size: 15px;
     text-align: center;
 }
 
