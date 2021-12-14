@@ -97,6 +97,7 @@ button{
     margin-left: 39%;
     margin-bottom: 30px;
     display: block;
+    visibility: hidden;
 }
 .navbar-brand{
     color: rgb(219, 127, 255);

@@ -7,13 +7,13 @@ const CORRECT1 = "Oikea vastaus! Mona Lisan maalasi Leonardo Da Vinci vuonna 150
 const WRONG1 = "Väärä vastaus! Oikea vastaus olisi ollut Leonardo Da Vinci, joka maalasi Mona Lisan vuonna 1503."
 
 const CORRECT2 = "Oikein meni! J.K. Rowling julkaisi seitsemän osaisen sarjan ensimmäisen kirjan vuonna 1997."
-const WRONG2 = "Väärä vastaus! Oikea vastaus olisi ollut J.K. Rowling."
+const WRONG2 = "Väärä vastaus! Oikea vastaus on J.K. Rowling."
 
 const CORRECT3 = "Huippua, tiesit oikean vastauksen! Kuvassa on todellakin Kalevalan päähenkilö Väinämöinen ja Pohjolan emäntä Louhi."
 const WRONG3 = "Hitsit, väärin meni! Kuvassa taistelevat Kalevalan päähenkilö Väinämöinen ja Pohjolan emäntä Louhi. "
 
 const CORRECT4 = "Tietenkin hurmaava Robin Packalen, hyvin tiedetty!"
-const WRONG4 = "Väärin, oikea vastaus olisi ollut Robin Packalen."
+const WRONG4 = "Väärin, oikea vastaus on Robin Packalen."
 
 const CORRECT5 = ""
 const WRONG5 = ""
@@ -98,6 +98,7 @@ function answer1(){
         document.getElementById("info").classList.add("wrongAnswer");
     }
 
+    document.getElementById("next").style.visibility = 'visible';
 }
 
 function answer2(){
@@ -144,7 +145,7 @@ function answer2(){
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus3",  pisteet);
+        localStorage.setItem("vastaus3",  points);
         points++;
     }
 
@@ -176,6 +177,7 @@ function answer2(){
         document.getElementById("info").classList.add("wrongAnswer");
     }
 
+    document.getElementById("next").style.visibility = 'visible';
 }
 
 function answer3(){
@@ -208,7 +210,7 @@ function answer3(){
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus2",  pisteet);
+        localStorage.setItem("vastaus2",  points);
         
         points++;
     }
@@ -241,7 +243,7 @@ function answer3(){
         document.getElementById("info").classList.add("wrongAnswer");
     }
 
-    if (document.getElementById("vastaus5").checked){
+    if (document.getElementById("vastaus4").checked){
         document.getElementById("info").innerHTML = WRONG3;
 
         document.getElementById("vastaus1").disabled = true;
@@ -250,10 +252,13 @@ function answer3(){
         document.getElementById("vastaus4").disabled = true;
       
     
-        document.getElementById("vastaus5").classList.add("wrongAnswer");
+        document.getElementById("vastaus4").classList.add("wrongAnswer");
 
         document.getElementById("info").classList.add("wrongAnswer");
     }
+
+    document.getElementById("next").style.visibility = 'visible';
+
 }
 
 function answer4(){
@@ -325,11 +330,14 @@ function answer4(){
         document.getElementById("vastaus4").disabled = true;
       
     
-        document.getElementById("vastaus3").classList.add("correctAnswer");
+        document.getElementById("vastaus4").classList.add("correctAnswer");
 
         document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus4",  pisteet);
+        localStorage.setItem("vastaus4",  points);
         
         points++;
     }
+
+    document.getElementById("next").style.visibility = 'visible';
 }
+
