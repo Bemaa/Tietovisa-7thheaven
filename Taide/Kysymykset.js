@@ -404,3 +404,6 @@ function answer5(){
 
     document.getElementById("next").style.visibility = 'visible';
 }
+let lopputulos = parseInt(localStorage.getItem('pisteet1'))+ parseInt(localStorage.getItem('pisteet2'))+ parseInt(localStorage.getItem('pisteet3'))+ parseInt(localStorage.getItem('pisteet4'))+ parseInt(localStorage.getItem('pisteet5'));
+
+document.getElementById("pisteet").innerHTML = "Pisteesi: " + lopputulos;
