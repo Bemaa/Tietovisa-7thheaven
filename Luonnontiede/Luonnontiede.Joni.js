@@ -1,5 +1,7 @@
+//Luodaan pisteille tyhjä muuttuja
 let points = 0;
 
+/**Funktiossa käydään läpi ensimmäisen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser(){
     if(document.getElementById("vastaus1").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeHirvi.Joni.html")
@@ -7,6 +9,7 @@ function anwser(){
     if(document.getElementById("vastaus2").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeIlves.Joni.html")
     }
+    //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus3").checked){
         window.location.replace("../../Luonnontiede/Kysymys1/infoSivut/LuonnontiedeTiikeri.Joni.html");
         points++;
@@ -19,6 +22,7 @@ function anwser(){
     }
     localStorage.setItem("points1",  points);
 };
+/**Funktiossa käydään läpi toisen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser2(){
     if(document.getElementById("vastaus6").checked){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeHiili.html")
@@ -29,6 +33,7 @@ function anwser2(){
     if(document.getElementById("vastaus8").checked){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeTuli.html")
     }
+    //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus9").checked){
         window.location.replace("../../Luonnontiede/Kysymys2/infoSivut2/LuonnontiedeLaava.html");
         points++;
@@ -38,7 +43,9 @@ function anwser2(){
     }
     localStorage.setItem("points2",  points);
 };
+/**Funktiossa käydään läpi kolmannen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser3(){
+    //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus11").checked){
         window.location.replace("../../Luonnontiede/Kysymys3/infoSivut3/LuonnontiedeSinivalas.html");
         points++;
@@ -57,10 +64,12 @@ function anwser3(){
     }
     localStorage.setItem("points3",  points);
 };
+/**Funktiossa käydään läpi neljännen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser4(){
     if(document.getElementById("vastaus16").checked){
         window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
     }
+    //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus17").checked){
         window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html");
         points++;
@@ -70,6 +79,7 @@ function anwser4(){
     }
     localStorage.setItem("points4",  points);
 };
+/**Funktiossa käydään läpi viidennen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser5(){
     if(document.getElementById("vastaus19").checked){
         window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKissankello.html")
@@ -77,13 +87,15 @@ function anwser5(){
     if(document.getElementById("vastaus20").checked){
         window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeMaitohorsma.html")
     }
+    //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus21").checked){
         window.location.replace("../../Luonnontiede/Kysymys5/infoSivut5/LuonnontiedeKielo.html");
         points++;
     }
     localStorage.setItem("points5",  points);
 };
-
+/**Lopuksi lasketaan vastaajan pisteet yhteen muuttujaan ja tulostetaan muuttuja sille tarkoitettuun kohtaan. 
+ * Tulostetaan myös pistemäärän mukaan sanallinen palaute kyselyn tuloksesta*/
 let totalPoints = 
 parseInt(localStorage.getItem('points1')) + 
 parseInt(localStorage.getItem('points2')) + 

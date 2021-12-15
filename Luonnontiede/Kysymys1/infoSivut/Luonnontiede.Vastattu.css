@@ -1,3 +1,6 @@
+/*
+    Tyylitiedosto valitulle vastaukselle. Tiedostossa on määritelty kuvat, koot ja tyylit tämän kysymyksen avatulle vastaukselle.
+*/
 input[type="radio"]{
     margin: 0.3em;
     font: inherit;
