@@ -12,7 +12,7 @@ input[type="radio"]{
 }
 #kysymys1Body,#kysymys2Body,#kysymys3Body,#kysymys4Body,#kysymys5Body{
     text-align: center;
-    background-image: url("../Luonnontiede/Luonnontiede.jpg");
+    background-image: url("Luonnontiede.jpg");
     background-size: cover;
     padding-bottom: 5em;
 }
