@@ -58,11 +58,6 @@ p{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
 }
-#kysymys2Body{
-    background-image: url("../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
-    text-align: center;
-    background-size: cover;
-}
 .kuvalinkki{
     color: black;
     text-decoration: none;
