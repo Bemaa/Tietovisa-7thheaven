@@ -67,15 +67,15 @@ function anwser3(){
 /**Funktiossa käydään läpi neljännen kysymyksen vastausvaihtoehdot ja ohjataan vastaaja vastauksen mukaiselle sivulle */
 function anwser4(){
     if(document.getElementById("vastaus16").checked){
-        window.location.replace("../Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeLaulujoutsen.html")
     }
     //Oikea vastaus kasvattaa pisteiden lukumäärää yhdellä
     if(document.getElementById("vastaus17").checked){
-        window.location.replace("../Kysymys4/infoSivut4/LuonnontiedeKarhu.html");
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeKarhu.html");
         points++;
     }
     if(document.getElementById("vastaus18").checked){
-        window.location.replace("../Kysymys4/infoSivut4/LuonnontiedeAhven.html")
+        window.location.replace("../../Luonnontiede/Kysymys4/infoSivut4/LuonnontiedeAhven.html")
     }
     localStorage.setItem("points4",  points);
 };
