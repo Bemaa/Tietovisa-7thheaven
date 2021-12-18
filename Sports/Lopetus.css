@@ -1,0 +1,44 @@
+body{
+    background-image: url(Tausta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.container{
+    grid-column: 2/3;
+    grid-row:  2/3;
+    background-color: #F3F0D7;
+    border: 15px solid #fcca85;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+#otsikko{
+    text-align: center;
+    padding: 20px;
+}
+
+#valiotsikko{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#aloitus{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+
+}
+
+#pisteet{
+    text-align: center;
+    font-weight: bold;
+}
