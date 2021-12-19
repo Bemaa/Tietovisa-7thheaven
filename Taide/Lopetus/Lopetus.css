@@ -49,6 +49,10 @@ input[type="radio"]{
     border-radius: 50%;
     
 }
+#end{
+    text-align: center;
+}
+
 p:nth-of-type(1){
     background-color: rgb(244, 200, 255);
     border-bottom : 20px solid rgb(255, 255, 255);
