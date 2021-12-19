@@ -350,7 +350,7 @@ let lopputulos = parseInt(localStorage.getItem("vastaus1")) +
         parseInt(localStorage.getItem("vastaus2")) +
         parseInt(localStorage.getItem("vastaus3")) +
         parseInt(localStorage.getItem("vastaus4")) + 
-        parseInt(localStorage.getItem("vastaus4"));
+        parseInt(localStorage.getItem("vastaus5"));
 
 
 document.getElementById("end").innerHTML = "Sait " + lopputulos + " pistettä!"
