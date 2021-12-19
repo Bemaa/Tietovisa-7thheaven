@@ -4,19 +4,20 @@ body{
     background-size: cover;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+   
     
 }
 
-.container{
-    grid-column: 2/3;
-    grid-row:  2/3;
+
+#box{
+ 
     background-color: #F3F0D7;
     border: 15px solid #fcca85;
     border-radius: 15px;
     padding: 10px;
+    margin-top: 250px;
 }
+
 
 
 
@@ -34,6 +35,5 @@ body{
 #aloitus{
     width: 40%;
     margin-left: 30%;
-    margin-right: 30%
-
+    margin-right: 30%  
 }
