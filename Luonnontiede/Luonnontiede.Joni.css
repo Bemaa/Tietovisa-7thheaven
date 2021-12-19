@@ -11,6 +11,7 @@ input[type="radio"]{
     border-radius: 50%;
 }
 /*
+Kaikkien kysymysten bodyyn asetetaan tasutakuva ja lisätään alas hieman tilaa, jotta footer näkyy
 */
 #kysymys1Body,#kysymys2Body,#kysymys3Body,#kysymys4Body,#kysymys5Body{
     text-align: center;
