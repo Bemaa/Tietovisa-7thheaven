@@ -62,7 +62,9 @@ Määritellään myös fontti koko 20 pikselin suuruiseksi ja margin 25 pikselin
     font-size: 20px;
 }
 
-
+/*
+Kysymys 4. kuvia varten tyyli, joka määrittelee molemmille taustaväriksi valkoisen ja keskittää kuvat. Lisätään paddingia 10 pikselin verran sekä marginia 25 pikselin verran. Poistetaan reunat.
+*/
 div#imageParent {
     background-color: white;
     text-align: center;
@@ -72,12 +74,18 @@ div#imageParent {
     border-radius: 0;
 }
 
+/*
+Kysymys 4. loppukuvaa varten tyyli, joka piilottaa loppukuvan. Asetetaan marginit oikealle sekä vasemalle automaattisesti.
+*/
 img#image1 {
     display: none;
     margin-right: auto;
     margin-left: auto;
 }
 
+/*
+Asetataan radiobuttoneiden inputeille fonttikoko 25 pikselin kokoiseksi. Muokataan radiobuttoneiden marginia 0.3 em suuruiseksi, muokataan fonttia inheritiksi sekä radiobuttoneiden väriä. Säädellään pituus sekä leveys 1.15 em kokoiseksi. Asetetaan reunoiksi jatkuva 1.5 pikselin pyöreähkö reunaviiva. Asetetaan tekstin koko 25 pikselin suuruiseksi sekä marginia vasemalla 25 pikselin suuruiseksi. Muokataan myös koko radiobutton osion vasenta marginia 50 pikselin verran.
+*/
 label {
     font-size: 25px;
 }
@@ -99,7 +107,7 @@ div#radiobuttons {
 }
 
 /*
-Säädetään napeille margin-top 25 pikselin suuruiseksi.
+Säädetään napeille margin-top 25 pikselin suuruiseksi. Piilotetaan myös seuraava-nappi pois näkyviltä. Säädetään lukitse-napin vasenta marginia 30 pikselin suuruiseksi.
 */
 .buttons {
     margin-top: 25px;
@@ -113,6 +121,9 @@ Säädetään napeille margin-top 25 pikselin suuruiseksi.
     margin-left: 30px;
 }
 
+/*
+Luodaan tyylit oikealle sekä väärälle vastauksille. Väärä vastaus vaihtaa värin punaiseksi ja oikea taas vihreäksi.
+*/
 .correctAnswer {
     color: green;
 }
@@ -121,6 +132,9 @@ Säädetään napeille margin-top 25 pikselin suuruiseksi.
     color: red;
 }
 
+/*
+Määritellään kuvalähden tekstin fonttikoko 15 pikselin suuruiseksi. Määritelään myös nav-barin teksti 25 pikselin suuruiseksi.
+*/
 .kuvalahde {
     font-size: 15px;
 }
