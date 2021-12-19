@@ -133,12 +133,13 @@ Luodaan tyylit oikealle sekä väärälle vastauksille. Väärä vastaus vaihtaa
 }
 
 /*
-Määritellään kuvalähden tekstin fonttikoko 15 pikselin suuruiseksi. Määritelään myös nav-barin teksti 25 pikselin suuruiseksi.
+Määritellään kuvalähden tekstin fonttikoko 15 pikselin suuruiseksi. Määritetään myös nav-barin teksti 20 pikselin suuruiseksi ja laitetaan paddingia 4 pikselin verran.
 */
 .kuvalahde {
     font-size: 15px;
 }
 
 .ylatunniste {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 4px;
 }
