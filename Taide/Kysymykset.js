@@ -36,10 +36,8 @@ function answer1(){
     
         document.getElementById("vastaus1").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("correctAnswer");
-
         points++;
-        localStorage.setItem("vastaus1",  points);
+        
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -51,9 +49,7 @@ function answer1(){
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
     
-        document.getElementById("vastaus2").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus3").checked){
@@ -64,10 +60,7 @@ function answer1(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
-        document.getElementById("vastaus3").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus4").checked){
@@ -78,10 +71,7 @@ function answer1(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus5").checked){
@@ -92,11 +82,10 @@ function answer1(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
-        document.getElementById("vastaus5").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
+
+    localStorage.setItem("vastaus1",  points);
 
     document.getElementById("next").style.visibility = 'visible';
 }
@@ -111,12 +100,7 @@ function answer2(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
-        document.getElementById("vastaus1").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
-
-        
+      
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -128,9 +112,6 @@ function answer2(){
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
     
-        document.getElementById("vastaus2").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus3").checked){
@@ -144,8 +125,6 @@ function answer2(){
     
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus3",  points);
         points++;
     }
 
@@ -158,9 +137,7 @@ function answer2(){
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
     
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus5").checked){
@@ -171,12 +148,11 @@ function answer2(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
-        document.getElementById("vastaus5").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
+    localStorage.setItem("vastaus3",  points);
+        
     document.getElementById("next").style.visibility = 'visible';
 }
 
@@ -189,13 +165,7 @@ function answer3(){
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
-        
-    
-        document.getElementById("vastaus1").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
-
-        
+          
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -207,10 +177,7 @@ function answer3(){
         document.getElementById("vastaus4").disabled = true;
         
     
-        document.getElementById("vastaus3").classList.add("correctAnswer");
-
-        document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus2",  points);
+        document.getElementById("vastaus2").classList.add("correctAnswer");
         
         points++;
     }
@@ -224,9 +191,6 @@ function answer3(){
         document.getElementById("vastaus4").disabled = true;
         
     
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus4").checked){
@@ -238,9 +202,6 @@ function answer3(){
         document.getElementById("vastaus4").disabled = true;
         
     
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus4").checked){
@@ -251,11 +212,9 @@ function answer3(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
       
-    
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
     }
+
+    localStorage.setItem("vastaus2",  points);
 
     document.getElementById("next").style.visibility = 'visible';
 
@@ -271,12 +230,6 @@ function answer4(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         
-    
-        document.getElementById("vastaus1").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
-
-        
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -287,10 +240,7 @@ function answer4(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         
-    
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus3").checked){
@@ -300,11 +250,8 @@ function answer4(){
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
-        
-    
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
+      
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus4").checked){
@@ -314,11 +261,7 @@ function answer4(){
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
-        
-    
-        document.getElementById("vastaus4").classList.add("wrongAnswer");
-
-        document.getElementById("info").classList.add("wrongAnswer");
+       
     }
 
     if (document.getElementById("vastaus5").checked){
@@ -329,14 +272,10 @@ function answer4(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
       
-    
-        document.getElementById("vastaus4").classList.add("correctAnswer");
-
-        document.getElementById("info").classList.add("correctAnswer");
-        localStorage.setItem("vastaus4",  points);
-        
         points++;
     }
+    localStorage.setItem("vastaus4",  points);
+        
 
     document.getElementById("next").style.visibility = 'visible';
 }
@@ -351,9 +290,10 @@ function answer5(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
     
-        document.getElementById("vastaus3").classList.add("wrongAnswer");
+            
+        document.getElementById("vastaus1").classList.add("incorrectAnswer");
+        document.getElementById("vastaus3").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus2").checked){
@@ -364,9 +304,10 @@ function answer5(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
     
-        document.getElementById("vastaus2").classList.add("wrongAnswer");
+             
+        document.getElementById("vastaus2").classList.add("incorrectAnswer");
+        document.getElementById("vastaus3").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("wrongAnswer");
     }
 
     if (document.getElementById("vastaus3").checked){
@@ -377,33 +318,39 @@ function answer5(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
 
+            
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("correctAnswer");
 
         points++;
         localStorage.setItem("vastaus3",  points);
     }
 
     if (document.getElementById("vastaus4").checked){
-        document.getElementById("info").innerHTML = CORRECT5;
+        document.getElementById("info").innerHTML = WRONG5;
 
         document.getElementById("vastaus1").disabled = true;
         document.getElementById("vastaus2").disabled = true;
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
 
+     
+        document.getElementById("vastaus4").classList.add("incorrectAnswer");
         document.getElementById("vastaus3").classList.add("correctAnswer");
 
-        document.getElementById("info").classList.add("correctAnswer");
-
-        points++;
-        localStorage.setItem("vastaus4",  points);
     }
 
 
-    document.getElementById("next").style.visibility = 'visible';
-}
-let lopputulos = parseInt(localStorage.getItem('pisteet1'))+ parseInt(localStorage.getItem('pisteet2'))+ parseInt(localStorage.getItem('pisteet3'))+ parseInt(localStorage.getItem('pisteet4'))+ parseInt(localStorage.getItem('pisteet5'));
+    document.getElementById("next").style.visibility = "visible";
 
-document.getElementById("pisteet").innerHTML = "Pisteesi: " + lopputulos;
+    localStorage.setItem("vastaus3", points);
+}
+
+let lopputulos = parseInt(localStorage.getItem("vastaus1")) +
+        parseInt(localStorage.getItem("vastaus2")) +
+        parseInt(localStorage.getItem("vastaus3")) +
+        parseInt(localStorage.getItem("vastaus4")) + 
+        parseInt(localStorage.getItem("vastaus4"));
+
+
+document.getElementById("end").innerHTML = "Sait " + lopputulos + " pistettä!"
