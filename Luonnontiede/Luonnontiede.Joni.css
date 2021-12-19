@@ -1,3 +1,6 @@
+/*
+    Tyylitiedosto sivuille, joissa kysymys esitetään. Tiedostossa on määritelty kuvat, koot ja tyylit tämän kysymyksen avatulle vastaukselle.
+*/
 input[type="radio"]{
     margin: 0.3em;
     font: inherit;
@@ -9,7 +12,7 @@ input[type="radio"]{
 }
 #kysymys1Body,#kysymys2Body,#kysymys3Body,#kysymys4Body,#kysymys5Body{
     text-align: center;
-    background-image: url("../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
+    background-image: url("Luonnontiede.jpg");
     background-size: cover;
     padding-bottom: 5em;
 }
@@ -54,11 +57,6 @@ p{
 #kysymys{
     text-decoration: underline;
     text-decoration-color: rgb(28, 141, 0);
-}
-#kysymys2Body{
-    background-image: url("../../Tietovisa-7thheaven/Luonnontiede/Luonnontiede.jpg");
-    text-align: center;
-    background-size: cover;
 }
 .kuvalinkki{
     color: black;
