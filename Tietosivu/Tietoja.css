@@ -7,7 +7,7 @@
 Asetetaan kuva taustaksi keskelle ja säätetään kuvaa, jotta se ei toistu. Keskitetääv kuva ja tehdään siitä 1950x1300 pikselin suuruinen, jotta se täyttää koko sivun. Määritetään kuvan pituus 100 prosenttiseksi. Määritellään fontti Segoe UI:ksi.
 */
 body {
-    background-image: url("/Etusivu/Kuvat/triangles-1430105_960_720.webp");
+    background-image: url("../Etusivu/Kuvat/triangles-1430105_960_720.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1950px 1300px;
