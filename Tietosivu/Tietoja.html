@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tietoja sivu">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Siiri Poropudas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Tietovisa - Tietoja</title>
@@ -10,6 +13,9 @@
 </head>
 <body>
 
+    <!--
+        Navigaatio ylätunniste, jossa on linkit etusivulle sekä muiden opiskelijoiden tietovisa sivuille. Tyylinä toimii Bootstrapin oma "light" tyyli.
+    -->
     <ul class="nav ylatunniste bg-light">
         
         <li class="nav-item">
@@ -37,11 +43,14 @@
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href='#'>Tietoja</a>
+            <a class="nav-link" href='../Tietosivu/Tietoja.html'>Tietoja</a>
         </li>
     </ul>  
 
-   <div class="container quiz">
+    <!--
+        Laatikko keskellä sivua, joka sisältää otsikot sekä tekstiä. Teksti informoi käyttäjää eri vastuualueista.
+    -->
+   <div class="container info">
 
         <div class="row">
             <div class="col otsikko">Tietoja</div>
@@ -79,7 +88,7 @@
             </div>
 
             <div class="row">
-                   <div class="col"></div>
+                <div class="col"></div>
                 <div class="col leipateksti">Tietosivu - Siiri Poropudas</div>
             </div>
     
@@ -87,14 +96,15 @@
                 <div class="col"></div>
                 <div class="col leipateksti">Etusivu - Siiri Poropudas, Carita Niskanen, Joni Lampela</div>
             </div>    
-    
-            </div>
         </div>
     </div>
 
+    <!--
+        Alatunnisteena toimii sivun pohjaan takertuva Bootstrapin nav-bar. Tyylinä toimii Bootstrapin oma "light" tyyli.
+    -->
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand">Siiri Poropudas, Liisa Pikkarainen, Joni Lampela, Carita Niskanen, Benjamin Madetoja</a>
+            <a class="navbar-brand">Siiri Poropudas, Liisa Pikkarainen, Joni Lampela, Carita Niskanen, Benjamin Madetoja</a>
         </div>
     </nav>
     
