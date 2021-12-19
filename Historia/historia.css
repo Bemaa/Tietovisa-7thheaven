@@ -1,3 +1,6 @@
+/*
+Asetetaan books.jpg taustaksi. Säädetään otsikko ja fontit sopivan kokoisiksi. Lisätään paddingia jotta boxista tulee sopivan kokoinen.
+*/
 body {
     background-image: url("../Historia/Kuvat/books.jpg"); /* Taustakuvan lähde: https://pixabay.com/fi/photos/kirjoja-kirjasto-lukeminen-koulutus-2606859/ */
     font-size: 3em;
@@ -8,15 +11,19 @@ body {
     gap: 10px;
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
+/*
+h4:lla säädetään "Kysymys X/5" -otsikkoa. Lisätään tähänkin marginia ja paddingia, jotta saadaan teksti oikeaan kohtaan. Muutetaan fontti ja sen koko.
+*/
 h4 {
     margin: 15px;
     padding-left: 20px;
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/*
+h2:lla säädetään "Historia" -otsikkoa. Keskitetään teksti ja lisätään paddingia ja marginia.
+*/
 h2 {
     background-color: rgb(255, 180, 0);
     font-family: 'Times New Roman', Times, serif;
@@ -26,7 +33,9 @@ h2 {
     padding-left: 25px;
     margin: 25px;
 }
-
+/*
+div#kysymys säätää kysymysboxia. Text-align keskittää tekstin. Ei lisätä reunoja.
+*/
 div#kysymys {
     background-color: rgb(195, 154, 100);
     text-align: center;
@@ -35,7 +44,9 @@ div#kysymys {
     border: none;
     border-radius: 0;
 }
-
+/*
+div#vastaus säätää vastausboxia, joka tulee esiin, kun käyttäjä on lukinnut vastauksen. Lähes samat asetukset mitä kysymysboxissa.
+*/
 div#vastaus {
     background-color: burlywood;
     text-align: center;
@@ -44,41 +55,47 @@ div#vastaus {
     border: none;
     border-radius: 0;
 }
-
+/*
+div säätää koko tietovisa-boxin ulkoasua. 
+*/
 div {
     background-color: burlywood;
     grid-column: 2/3;
-    grid-row: 2/3;
     border: 20px solid #4b1500;
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 50px;
 }
-
+/*
+label säätää vastausvaihtoehtojen paikkaa. Padding luo väliä radiobuttonin ja tekstin väliin.
+*/
 label {
     font-size: 35px;
     padding: 15px;
     text-align: right;
 }
-
+/*
+input[type="radio"] säätää radiobuttonia. Marginin avulla saadaan radiobutton ja sen vieressä oleva teksti samalle tasolle. Width tuo buttonille lisää tilaa vaakatasossa ja height lisää väliä 
+vastausvaihtoehtojen välillä.
+*/
 input[type="radio"] {
-    margin: 0.3em;
-    font: inherit;
-    color: currentColor;
+    margin: 0.4em;
     width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
+    height: 1.5em;
+    border: 0.15em;
     border-radius: 50%;
     font-size: 25px; 
     margin-top: 8.5px;
     vertical-align: middle;
 }
-
+/*
+"Lukitse vastaus" ja "Seuraava kysymys" -nappien tyylit
+*/
 .btn1 {
     font-size: 2.4rem;
-    padding: 3 rem 0;
-    width: 0rem;
+    padding: 2 rem 0;
+    width: 30rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
@@ -98,13 +115,17 @@ input[type="radio"] {
     background: linear-gradient(90deg, rgb(126, 26, 8) 0%, rgb(218, 96, 48) 100%);
     border-radius: 4px;
 }
-
+/*
+Tulokset-napin tyyli
+*/
 .tulokset {
     padding: 30px;
     text-align: center;
     font-size: 70px;
 }
-
+/*
+"Pisteet" ja "Kiitos pelailusta" tekstien tyylit
+*/
 .pisteesi {
     font-size: 40px;
 }

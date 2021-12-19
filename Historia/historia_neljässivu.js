@@ -1,3 +1,10 @@
+/*
+    Created on : December, 2021
+    Author     : Liisa Pikkarainen
+*/
+
+// Javascriptin pohjaa lainattu Siiri Poroputaalta
+
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
 let rightAnswer = "Loistavaa, tiesit vastauksen!";
@@ -88,7 +95,6 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
-    document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
 
