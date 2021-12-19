@@ -49,7 +49,7 @@
     </ul>
   
     <!--
-        Laatikko keskellä sivua, joka sisältää: tekstiä, otsikon, kuvan, linkin, radiobuttoneita sekä nappeja. Linkki on osa kuvalähdettä kuvan alla, ja vie käyttäjän kuvan lähdesivulle. Radiobuttonit ovat vastausvaihtoehtoja, joista käyttäjä voi valita vain yhden. Nappeja on kaksi, joista käyttäjälle aluksi näkyy vain "lukitse" nappi. "Lukitse" nappi aktivoi funktion 
+        Laatikko keskellä sivua, joka sisältää: tekstiä, otsikon, kuvan, linkin, radiobuttoneita sekä nappeja. Linkki on osa kuvalähdettä kuvan alla, ja vie käyttäjän kuvan lähdesivulle. Radiobuttonit ovat vastausvaihtoehtoja, joista käyttäjä voi valita vain yhden. Nappeja on kaksi, joista käyttäjälle aluksi näkyy vain "lukitse" nappi. "Lukitse" nappi aktivoi funktion "correctAnswer1()". "Seuraava" nappi ilmestyy ja se vie käyttäjän seuraavaan kysymykseen.
     -->
     <div class="quiz container">
 
@@ -78,7 +78,7 @@
                 <div class="col" id="ratkaisu"></div>
             </div>
         </div>
-        
+
         <div id="radiobuttons">
             <div class="row">
                 <div class="form-check">
@@ -133,6 +133,9 @@
         </div>
     </div>
 
+    <!--
+        Alatunnisteena toimii sivun pohjaan takertuva Bootstrapin nav-bar. Tyylinä toimii Bootstrapin oma "light" tyyli.
+    -->
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">Siiri Poropudas</a>
