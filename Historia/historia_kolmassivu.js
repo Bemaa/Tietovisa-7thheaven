@@ -1,3 +1,10 @@
+/*
+    Created on : December, 2021
+    Author     : Liisa Pikkarainen
+*/
+
+// Javascriptin pohjaa lainattu Siiri Poroputaalta
+
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
 let rightAnswer = "Kyllä, Isossa-Britanniassa!";
@@ -68,7 +75,6 @@ function correctAnswer() {
     }
     
 
-    document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
 

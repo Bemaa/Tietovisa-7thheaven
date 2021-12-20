@@ -1,3 +1,10 @@
+/*
+    Created on : December, 2021
+    Author     : Liisa Pikkarainen
+*/
+
+// Javascriptin pohjaa lainattu Siiri Poroputaalta
+
 document.getElementById("lukitse").addEventListener("click", correctAnswer);
 
 let rightAnswer = "Hienoa, sinä osaat!";
@@ -73,7 +80,7 @@ function correctAnswer() {
     }
 
     // Jos "Helsinki" valittuna
-    if(document.getElementById("vastaus4").checked) {
+    if(document.getElementById("vastaus5").checked) {
         document.getElementById("ratkaisu").innerHTML = wrongAnswer;
 
         document.getElementById("vastaus1").disabled = true;
@@ -88,7 +95,6 @@ function correctAnswer() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
-    document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
 

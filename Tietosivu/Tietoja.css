@@ -1,5 +1,13 @@
+/*
+    Created on : December, 2021
+    Author     : Siiri Poropudas
+*/
+
+/*
+Asetetaan kuva taustaksi keskelle ja säätetään kuvaa, jotta se ei toistu. Keskitetääv kuva ja tehdään siitä 1950x1300 pikselin suuruinen, jotta se täyttää koko sivun. Määritetään kuvan pituus 100 prosenttiseksi. Määritellään fontti Segoe UI:ksi.
+*/
 body {
-    background-image: url("/Etusivu/Kuvat/triangles-1430105_960_720.webp");
+    background-image: url("../Etusivu/Kuvat/triangles-1430105_960_720.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1950px 1300px;
@@ -7,7 +15,10 @@ body {
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.quiz {
+/*
+Tehdään "info" laatikosta 650x600 pikselin suuruinen ja asetetaan margin-top 20 pikselin suuruiseksi. Lisätään laatikolle jatkuvat 10 pikselin tylppäkulmaiset reunaviivat, jotka ovat 10 pikselin levyiset. Lisätään myös pohjalle paddingia 2 em verran.
+*/
+.info {
     width: 650px;
     height: 600px;
     margin-top: 20px;
@@ -17,6 +28,9 @@ body {
     padding-bottom: 2em;
 }
 
+/*
+Keskitetään otsikkoa ja lisätään 50 pikselin verran marginia ylös. Säädetään fonttikoko 35 pikselin suuruiseksi, lihavoidaan teksti ja väritetään se tummansiniseksi. Säädetään väliotsikon (.otsikko2) fonttikoko 20 pikselin suuruiseksi, lihavoidaan teksti ja väritetään se tummansiniseksi.
+*/
 .otsikko {
     text-align: center;
     margin-top: 50px;
@@ -31,6 +45,9 @@ body {
     color: rgb(16, 52, 100);
 }
 
+/*
+Lisätään paddingia sisältölaatikkoon 30 pikselin verran ja keskitetään teksti. Lisätään laatikolle jatkuvat 10 pikselin tylppäkulmaiset reunaviivat, jotka ovat 5 pikselin levyiset. Säädetään sisältölaatikon taustaväriksi valkoinen sekä marginia 40 pikselin verran.
+*/
 #tekstilaatikko {
     padding: 30px;
     text-align: center;

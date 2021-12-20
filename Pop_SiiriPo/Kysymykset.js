@@ -12,6 +12,8 @@ const INCORRECT3 = "Hupsis! Aku Ankan siskonpoikien nimet ovat Tupu, Hupu ja Lup
 const CORRECT4 = "Mahtavaa! Tämähän on kaikkien rakastaman Walt Disney studion logo!"
 const INCORRECT4 = "Voi ei! Tämä on Disney studion logo."
 
+const ERROR = "Valitse jokin vastausvaihtoehto."
+
 let pisteet = 0
 
 /*
@@ -113,6 +115,17 @@ function correctAnswer1() {
         document.getElementById("v4").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+    }
+
+    /*
+    Jos käyttäjä ei ole valinnut mitään vastausvaihtoehdoista, tulostetaan error, joka pyytää käyttäjää valitsemaan jokin vaihtoehto. Muutetaan myös error ilmoitustekstin väri punaiseksi.
+    */
+    if(document.getElementById("vastaus1").checked == false && document.getElementById("vastaus2").checked == false && document.getElementById("vastaus3").checked == false && document.getElementById("vastaus4").checked == false && document.getElementById("vastaus5").checked == false) {
+
+        document.getElementById("ratkaisu").innerHTML = ERROR;
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        return;
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
@@ -227,6 +240,17 @@ function correctAnswer2() {
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
     }
 
+    /*
+    Jos käyttäjä ei ole valinnut mitään vastausvaihtoehdoista, tulostetaan error, joka pyytää käyttäjää valitsemaan jokin vaihtoehto. Muutetaan myös error ilmoitustekstin väri punaiseksi.
+    */
+    if(document.getElementById("vastaus1").checked == false && document.getElementById("vastaus2").checked == false && document.getElementById("vastaus3").checked == false && document.getElementById("vastaus4").checked == false && document.getElementById("vastaus5").checked == false) {
+
+        document.getElementById("ratkaisu").innerHTML = ERROR;
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        return;
+    }
+
     document.getElementById("seuraava").style.visibility = 'visible';
     
     document.getElementById("lukitse").disabled = true;
@@ -335,6 +359,17 @@ function correctAnswer3() {
         document.getElementById("v3").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+    }
+
+    /*
+    Jos käyttäjä ei ole valinnut mitään vastausvaihtoehdoista, tulostetaan error, joka pyytää käyttäjää valitsemaan jokin vaihtoehto. Muutetaan myös error ilmoitustekstin väri punaiseksi.
+    */
+    if(document.getElementById("vastaus1").checked == false && document.getElementById("vastaus2").checked == false && document.getElementById("vastaus3").checked == false && document.getElementById("vastaus4").checked == false && document.getElementById("vastaus5").checked == false) {
+
+        document.getElementById("ratkaisu").innerHTML = ERROR;
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        return;
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
@@ -446,6 +481,20 @@ function correctAnswer4() {
         pisteet++;
     }
 
+    /*
+    Jos käyttäjä ei ole valinnut mitään vastausvaihtoehdoista, tulostetaan error, joka pyytää käyttäjää valitsemaan jokin vaihtoehto. Muutetaan myös error ilmoitustekstin väri punaiseksi.
+    */
+    if(document.getElementById("vastaus1").checked == false && document.getElementById("vastaus2").checked == false && document.getElementById("vastaus3").checked == false && document.getElementById("vastaus4").checked == false && document.getElementById("vastaus5").checked == false) {
+
+        document.getElementById("ratkaisu").innerHTML = ERROR;
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        return;
+    }
+
+    /*
+    Vaihdetaan ei-sumennetun logo kuvan tyyli näkyväksi block elementiksi. Piilotetaan sumennettu logo kuva.
+    */
     if(document.getElementById("image1").style.display != 'show') {
         
         document.getElementById("image1").style.display = 'block';
@@ -558,6 +607,17 @@ function correctAnswer5(){
         document.getElementById("v1").classList.add("correctAnswer");
     
         document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+    }
+
+    /*
+    Jos käyttäjä ei ole valinnut mitään vastausvaihtoehdoista, tulostetaan error, joka pyytää käyttäjää valitsemaan jokin vaihtoehto. Muutetaan myös error ilmoitustekstin väri punaiseksi.
+    */
+    if(document.getElementById("vastaus1").checked == false && document.getElementById("vastaus2").checked == false && document.getElementById("vastaus3").checked == false && document.getElementById("vastaus4").checked == false && document.getElementById("vastaus5").checked == false) {
+
+        document.getElementById("ratkaisu").innerHTML = ERROR;
+
+        document.getElementById("ratkaisu").classList.add("incorrectAnswer");
+        return;
     }
 
     document.getElementById("seuraava").style.visibility = 'visible';
