@@ -38,7 +38,8 @@ h4{
     padding-right: 5px;
     color:rgb(50, 0, 73)
 }
-/* Määritellään kysymysboxin kokonaisuutta ympäröivät reunat, lisätään kulmien pyöristystä 15px, taustaväri ja fontin koko.*/
+/* Määritellään kysymysboxin kokonaisuutta ympäröivät reunat, lisätään kulmien pyöristystä 15px, taustaväri ja fontin koko. Keskitetään teksti ja määritellään
+padding*/
 .container-2{
     background-color: rgb(219, 127, 255);
     font-size: 30px;
