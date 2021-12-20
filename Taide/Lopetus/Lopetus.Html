@@ -16,6 +16,10 @@
 </head>
 <body id="kysymyspohja">
     
+<!-- Aloitan sivun kokoamisen bodyssa ensin NAV-ylätunnisteella. Meidän ryhmällä on kaikilla sama nav ja footer- tunnisteet. Ylätunnisteessa on etusivulinkin lisäksi 
+linkitys tietoja- osioon ja alhaalla on tekijän/tekijöiden nimet.-->
+
+
     <ul class="nav ylatunniste bg-light">
         <li class="nav-item">
             <a class="nav-link" href="../../index.html">Etusivulle</a>
@@ -46,23 +50,29 @@
           </li>
       </ul>
   
-
+<!-- Seuraavana sivulle määritetään container, jonka sisälle tulee koko sivun sisältö-->
     <div class="container">
         <div class="row">
+            <!-- Tyhjä container täyttämään vasempaa reunaa, jotta content pysyy keskellä-->
             <div class="col-3">
             </div>
             <div class="col-7">
+                <!-- Otsikkolaatikko, joka pysyy samana joka sivulla-->
                 <h1 id="otsikko">TAIDE</h1>
                 <div class="content">
                     <div class="container-2">
+                        <!-- Kysymysosio, jossa kiitetään pelin pelaamisesta ja kerrotaan pisteet-->
                             <div id="quiz">
                                 <p id="image">
                                    
                                     <br>Kiitos, kun pelasit! <br>
+                                    <!-- Ikoni -->
                                     <i class="fas fa-cat"></i>
+                                    <!-- Linkitetty nappi takaisin etusivulle -->
                                     <a href="../../index.html">Takaisin etusivulle</a>
+                                    <!-- Ikoni -->
                                     <i class="fas fa-cat"></i>
-                                    
+                                    <!-- Ilmoitetaan pelissä kerätyt pisteet-->
                                     <div id="end"><span id="lopputulos"></span>/5</div>
                                 </p>
                             
@@ -73,13 +83,13 @@
              </div>
         </div>
     </div>
-
+<!-- Alempi nav-bar, jossa löytyy tekijöiden nimet.-->
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">Carita Niskanen</a>
         </div>
     </nav>
-
+<!-- Liittety javascript- tiedosto-->
 <script src="../Kysymykset.js"></script>
 </body>
 </html>

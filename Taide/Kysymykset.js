@@ -19,13 +19,13 @@ const WRONG4 = "Väärin, oikea vastaus on Robin Packalen."
 const CORRECT5 = "Kyllä, juuri näin! Tove Jansson oli suomenruotsalainen kirjailija, taidemaalari ja sarjakuvataiteilija. Muumit syntyivät 1940. "
 const WRONG5 = "Hups, väärin! Oikea vastaus on Tove Jansson."
 
-/* Asetan muuttujan pistelaskurille, joka lisääntyy jokaisen kysymyksen kohdalla. */
+// Asetan muuttujan pistelaskurille, joka lisääntyy jokaisen kysymyksen kohdalla. 
 let points = 0;
 
-// Seuraavaksi määrittelen muuttujat jokaiselle kysymykselle. Jokainen kysymysrakenne on samanlainen, jossa vain vastauksen kohdat muutuvat oikein/väärin. 
-// Radiobutton checkataan omalla rivillä, että käyttäjä on tehnyt valinnan ja sitten ne lukitaan. 
-// Oikean vastauksen if-lausekkeen sisällä lisätään 1 piste loppusivulle.
-// Lopuksi pushataan localStorageen talteen vastauksen tulos.
+/* Seuraavaksi määrittelen muuttujat jokaiselle kysymykselle. Jokainen kysymysrakenne on samanlainen, jossa vain vastauksen kohdat muutuvat oikein/väärin. 
+Radiobutton checkataan omalla rivillä, että käyttäjä on tehnyt valinnan ja sitten ne lukitaan. 
+Oikean vastauksen if-lausekkeen sisällä lisätään 1 piste loppusivulle.
+ Lopuksi pushataan localStorageen talteen vastauksen tulos. */
 
 function answer1(){
 
