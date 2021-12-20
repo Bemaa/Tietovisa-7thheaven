@@ -1,3 +1,4 @@
+/* Taustan asettaminen.  */
 body{
     background-image: url(../Tausta.png);
     background-repeat: no-repeat;
@@ -8,6 +9,7 @@ body{
     height: 100%;
     
 }
+/*Fonttien, värien sekä asettelujen muokkaukset eri elementeiltä*/
 #head{
     
     font-weight: bold;
@@ -41,7 +43,7 @@ body{
     border-radius: 15px;
     
 }
-
+/* Radio buttoneiden muokkaukset. */
 input[type="radio"]{
     margin: 0.3em;
     font: inherit;

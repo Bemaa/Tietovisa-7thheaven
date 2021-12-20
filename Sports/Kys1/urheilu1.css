@@ -1,3 +1,5 @@
+
+/* Taustan asettaminen.  */
 body{
     background-image: url(../Tausta.png);
     background-repeat: no-repeat;
@@ -8,40 +10,36 @@ body{
     height: 100%;
     
 }
-#head{
-    
+
+/*Fonttien, värien sekä asettelujen muokkaukset eri elementeiltä*/
+#head{ 
     font-weight: bold;
     font-size: 60px;
     letter-spacing: 2px;
     color: #FF8243;
     font-family: monospace, monaco, sans-serif;
-    
 }
-
 #subhead{
     font-size: 30px;
     font-family: monospace, courier new, sans-serif;
  
 }
-
 #kysymykset{
     font-family: monospace, courier new, sans-serif;
     padding: 15px;
 }
-
 #quiz{
     text-align: center;
     margin: 10% 0 10% 0;
     padding-top: 4em;
     grid-column: 2/3;
-
     background-color: #F3F0D7;
     border: 15px solid #fcca85;
-    border-radius: 15px;
-
-    
+    border-radius: 15px;  
 }
 
+
+/* Radio buttoneiden muokkaukset. */
 input[type="radio"]{
     margin: 0.3em;
     font: inherit;

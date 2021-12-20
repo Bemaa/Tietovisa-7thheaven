@@ -1,3 +1,4 @@
+/* Taustan asettaminen.  */
 body{
     background-image: url(Tausta.png);
     background-repeat: no-repeat;
@@ -8,6 +9,7 @@ body{
     grid-template-rows: 1fr 1fr 1fr;
     
 }
+
 
 .container{
     grid-column: 2/3;

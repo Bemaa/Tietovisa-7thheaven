@@ -1,16 +1,15 @@
+
+/* Taustan asettaminen.  */
 body{
     background-image: url(../Tausta.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    display: grid;
-   
-    
 }
 
 
+/*Boksille selkeä reuna sekä taustaväri.  */ 
 #box{
- 
     background-color: #F3F0D7;
     border: 15px solid #fcca85;
     border-radius: 15px;

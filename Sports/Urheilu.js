@@ -1,9 +1,11 @@
 
 
 
-//pisteitten laskua
+//pisteitten laskuun apu elementti
 let pisteet = 0
 
+
+//Functio mihin ensin muuttujilla oikean ja väärän vastauksen tulosteet. Kun vastaus lukittu radio buttonit menee disabled muotoon. Jos vastaus väärin tulostetaan vastaus boksiin väärän vastauksen tuloste ja muutetaan reunat punaiseksi. Jos vastaus oikein muutetaan reunat vihreiksi ja tulostetaan oikean vastauksen tuloste.
 function anwser(){
   
     
