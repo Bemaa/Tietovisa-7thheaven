@@ -14,6 +14,9 @@
     <title>Kysymyspohja</title>
 </head>
 <body id="kysymyspohja">
+
+<!-- Aloitan sivun kokoamisen bodyssa ensin NAV-ylätunnisteella. Meidän ryhmällä on kaikilla sama nav ja footer- tunnisteet. Ylätunnisteessa on etusivulinkin lisäksi 
+linkitys tietoja- osioon ja alhaalla on tekijän/tekijöiden nimet.-->
      
     <ul class="nav ylatunniste bg-light">
         <li class="nav-item">
@@ -46,24 +49,32 @@
     </ul>
   
 
+<!-- Seuraavana sivulle määritetään container, jonka sisälle tulee koko sivun sisältö-->
     <div class="container">
         <div class="row">
+            <!-- Tyhjä container täyttämään vasempaa reunaa, jotta content pysyy keskellä-->
             <div class="col-3">
             </div>
             <div class="col-7">
+                <!-- Otsikkolaatikko, joka pysyy samana joka sivulla-->
                 <h1 id="otsikko">TAIDE</h1>
+                <!-- h4-otsikko, joka kertoo missä kysymyksessä ollaan menossa-->
                     <h4 id="kysymysNro">Kysymys 5/5</h4>
                 <div class="content">
                     <div class="container-2">
+                        <!-- Content-osio, jonka sisällä on kokonaisuutena kysymykset vastauksien kanssa.-->
                             <div id="quiz">
+                                <!-- Kysymysosio, jossa on joissakin kysymyksissä mukaan liitetty kuva-->
                                 <p id="image">
                                     <img src="../pictures/tove_jansson_cover_picture_for_moumine_le_troll_taikurin_hattu_1968.jpeg" class="resize"> <br>
                                     <a id="lähde" href="https://finlandabroad.fi/web/swe/ajankohtaista/-/asset_publisher/TV8iYvdcF3tq/content/kurkistus-muumien-maailmaan/384951">Picture: Jari Kuusenaho ©Moomin Characters</a>
                                     <br>Kuka kuuluisa taiteilija loi Muumit? <br>
                                     
+                                    <!--Vastaamisen jälkeen infoboxi tulee esille-->
                                     <div class="img-thumbnail" id="info"></div>
                                 </p>
                             
+                                <!-- Radiobuttonit, joista valitaan haluttu vastaus-->
                                 <input class="container" type="radio" name="anwser" id="vastaus1">
                                 <label for="radio">A)	H.C. Andersen </label><br>
 
@@ -76,6 +87,7 @@
                                 <input class="container" type="radio" name="anwser" id="vastaus4">
                                 <label for="radio">D) Frida Kahlo </label><br>
                                 
+                                <!-- Kaksi nappia, joista toinen on ohjelmoitu javascriptissä lukitsemaan vastaus. "next"- nappi ohjaa toiselle sivulle.-->
                                 <button type="button" id="vahvista" onclick="answer5()">Lukitse vastaus</button>
                                 <button id="next" onclick="location.href='../Lopetus/Lopetus.html'"> Lopeta</button>
                                 
@@ -85,13 +97,13 @@
              </div>
         </div>
     </div>
-
+<!-- Alempi nav-bar, jossa löytyy tekijöiden nimet.-->
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">Carita Niskanen</a>
         </div>
     </nav>
-
+<!-- Liittety javascript- tiedosto-->
 <script src="../Kysymykset.js"></script>
 </body>
 </html>

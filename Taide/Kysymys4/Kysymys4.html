@@ -15,6 +15,10 @@
 </head>
 <body id="kysymyspohja">
    
+<!-- Aloitan sivun kokoamisen bodyssa ensin NAV-ylätunnisteella. Meidän ryhmällä on kaikilla sama nav ja footer- tunnisteet. Ylätunnisteessa on etusivulinkin lisäksi 
+linkitys tietoja- osioon ja alhaalla on tekijän/tekijöiden nimet.-->
+
+
     <ul class="nav ylatunniste bg-light">
         <li class="nav-item">
             <a class="nav-link" href="../../index.html">Etusivulle</a>
@@ -45,25 +49,30 @@
           </li>
       </ul>
   
-
+<!-- Seuraavana sivulle määritetään container, jonka sisälle tulee koko sivun sisältö-->
     <div class="container">
         <div class="row">
+            <!-- Tyhjä container täyttämään vasempaa reunaa, jotta content pysyy keskellä-->
             <div class="col-3">
             </div>
             <div class="col-7">
+                <!-- Otsikkolaatikko, joka pysyy samana joka sivulla-->
                 <h1 id="otsikko">TAIDE</h1>
+                 <!-- h4-otsikko, joka kertoo missä kysymyksessä ollaan menossa-->
                     <h4 id="kysymysNro">Kysymys 4/5</h4>
                 <div class="content">
                     <div class="container-2">
-                        
+                        <!-- Kysymysosio, jossa on joissakin kysymyksissä mukaan liitetty kuva-->
                             <div id="quiz">
                                 <p id="image">
                                 
                                     <br>Kuka laulaa kuuluisan kappaleen <br> ”Frontside Ollie”?
+
+                                    <!--Vastaamisen jälkeen infoboxi tulee esille-->
                                     <div class="img-thumbnail" id="info"></div>
                                 </p>
                                 
-                            
+                                <!-- Radiobuttonit, joista valitaan haluttu vastaus-->
                                 <input class="container" type="radio" name="anwser" id="vastaus1">
                                 <label for="radio">A)	Mikael Gabriel</label><br>
 
@@ -81,6 +90,7 @@
 
                                 
                     
+                                <!-- Kaksi nappia, joista toinen on ohjelmoitu javascriptissä lukitsemaan vastaus. "next"- nappi ohjaa toiselle sivulle.-->
                                 <button type="button" id="lukitse" onclick="answer4()">Lukitse vastaus</button>
                                 <button id="next" onclick="location.href='../Kysymys5/Kysymys5.html'"> Seuraava kysymys</button>
 
@@ -91,13 +101,13 @@
              </div>
         </div>
     </div>
-
-    <nav class="navbar fixed-bottom navbar-light bg-light">
+<!-- Alempi nav-bar, jossa löytyy tekijöiden nimet.-->
+<nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">Carita Niskanen</a>
         </div>
     </nav>
-
+<!-- Liittety javascript- tiedosto-->
     <script src="../Kysymykset.js"></script>
 </body>
 </html>

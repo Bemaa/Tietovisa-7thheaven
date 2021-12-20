@@ -13,6 +13,9 @@ body{
     background-size: cover;
     zoom: 75%;
 }
+.navbar-brand{
+    height: 20px;
+}
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -74,7 +77,6 @@ label{
 #lähde{
     font-size: 15px;
 }
-
 button{
     background-color: rgb(50, 0, 73);
     color: rgb(244, 200, 255);
@@ -88,7 +90,6 @@ button{
     margin-bottom: 30px;
     display: block;
 }
-
 #next{
     background-color: rgb(50, 0, 73);
     color: rgb(244, 200, 255);
@@ -102,7 +103,4 @@ button{
     margin-bottom: 30px;
     display: block;
     visibility: hidden;
-}
-.navbar-brand{
-    height: 20px;
 }
