@@ -3,6 +3,10 @@
     Author     : Siiri Poropudas
 */
 
+/*
+Luodaan muuttujia eri kommenteille, joita ilmestyy riippuen, mitä käyttäjä on valinnut vastauksekseen. Määritetään myös pisteiden alkuluvuksi nolla.
+*/
+
 const CORRECT1 = "Oikein, hyvä hyvä! Minecraft on kuuluisa siitä, että peli on tehty vain neliöistä."
 const INCORRECT1 = "Ei ihan! Kuvassa on Minecraft."
 
@@ -80,7 +84,7 @@ function correctAnswer1() {
 
     /*
     Jos käyttäjä on valinnut vastauksen "Minecraft".
-    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
+    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi. Koska vastaus on oikein, lisätään pisteiden lukumäärään yksi.
     */
     if(document.getElementById("vastaus4").checked) {
         document.getElementById("ratkaisu").innerHTML = CORRECT1;
@@ -128,6 +132,10 @@ function correctAnswer1() {
         return;
     }
 
+    /*
+    Muutetaan piilossa oleva "seuraava" nappi näkyväksi ja disabloidaan "lukitse" nappi, jotta sitä ei voi enää klikata. Lisätään pisteiden määrä (joko 0 tai 1) muistiin lokaaliin selain muistiin talteen, jotta data ei häviä kun sivua vaihdetaan.
+    */
+
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
@@ -161,7 +169,7 @@ function correctAnswer2() {
     
     /*
     Jos käyttäjä on valinnut vastauksen "Peter Pan".
-    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
+    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi. Koska vastaus on oikein, lisätään pisteiden lukumäärään yksi.
     */
     if(document.getElementById("vastaus2").checked) {
 
@@ -251,6 +259,10 @@ function correctAnswer2() {
         return;
     }
 
+    /*
+    Muutetaan piilossa oleva "seuraava" nappi näkyväksi ja disabloidaan "lukitse" nappi, jotta sitä ei voi enää klikata. Lisätään pisteiden määrä (joko 0 tai 1) muistiin lokaaliin selain muistiin talteen, jotta data ei häviä kun sivua vaihdetaan.
+    */
+
     document.getElementById("seuraava").style.visibility = 'visible';
     
     document.getElementById("lukitse").disabled = true;
@@ -304,7 +316,7 @@ function correctAnswer3() {
 
     /*
     Jos käyttäjä on valinnut vastauksen "Tupu, Hupu ja Lupu".
-    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
+    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi. Koska vastaus on oikein, lisätään pisteiden lukumäärään yksi.
     */
     if(document.getElementById("vastaus3").checked) {
 
@@ -372,6 +384,9 @@ function correctAnswer3() {
         return;
     }
 
+    /*
+    Muutetaan piilossa oleva "seuraava" nappi näkyväksi ja disabloidaan "lukitse" nappi, jotta sitä ei voi enää klikata. Lisätään pisteiden määrä (joko 0 tai 1) muistiin lokaaliin selain muistiin talteen, jotta data ei häviä kun sivua vaihdetaan.
+    */
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
@@ -462,7 +477,7 @@ function correctAnswer4() {
 
     /*
     Jos käyttäjä on valinnut vastauksen "Walt Disney".
-    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
+    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi. Koska vastaus on oikein, lisätään pisteiden lukumäärään yksi.
     */
     if(document.getElementById("vastaus5").checked) {
 
@@ -501,6 +516,9 @@ function correctAnswer4() {
         document.getElementById("image2").style.display = 'none'
     }
 
+    /*
+    Muutetaan piilossa oleva "seuraava" nappi näkyväksi ja disabloidaan "lukitse" nappi, jotta sitä ei voi enää klikata. Lisätään pisteiden määrä (joko 0 tai 1) muistiin lokaaliin selain muistiin talteen, jotta data ei häviä kun sivua vaihdetaan.
+    */
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
@@ -514,7 +532,7 @@ Funktio 5. kysymykselle, joka tarkastaa minkä vastauksen käyttäjä on valinnu
 function correctAnswer5(){
     /*
     Jos käyttäjä on valinnut vastauksen "Nasu".
-    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi.
+    Vastaus on oikein, joten tuotetaan sivulle teksti, joka ilmoittaa käyttäjälle vastauksen olevan oikein. Lukitaan myös radiobuttonit, jolloin vastausta ei voi enää vaihtaa. Muutetaan valitun vastauksen väri vihreäksi sekä ilmoitustekstin väri vihreäksi. Koska vastaus on oikein, lisätään pisteiden lukumäärään yksi.
     */
     if(document.getElementById("vastaus1").checked) {
         document.getElementById("ratkaisu").innerHTML = "Täydellistä! Nasu on pieni, vaaleanpunainen possu.";
@@ -620,6 +638,9 @@ function correctAnswer5(){
         return;
     }
 
+    /*
+    Muutetaan piilossa oleva "seuraava" nappi näkyväksi ja disabloidaan "lukitse" nappi, jotta sitä ei voi enää klikata. Lisätään pisteiden määrä (joko 0 tai 1) muistiin lokaaliin selain muistiin talteen, jotta data ei häviä kun sivua vaihdetaan.
+    */
     document.getElementById("seuraava").style.visibility = 'visible';
 
     document.getElementById("lukitse").disabled = true;
@@ -627,6 +648,9 @@ function correctAnswer5(){
     localStorage.setItem("pisteet5", pisteet);
 }
 
+/*
+Lopuksi luodaan muuttuja, jossa kutsutaan jokaisesta kysymysfunktiosta pisteiden määrät selaimen muistista ja lisätään ne yhteen. Tulostetaan tulos ja ilmoitetaan käyttäjälle saatu pisteiden lukumäärä.
+*/
 let lopputulos = parseInt(localStorage.getItem('pisteet1'))+ parseInt(localStorage.getItem('pisteet2'))+ parseInt(localStorage.getItem('pisteet3'))+ parseInt(localStorage.getItem('pisteet4'))+ parseInt(localStorage.getItem('pisteet5'));
 
 document.getElementById("pisteet").innerHTML = "Pisteesi: " + lopputulos;
