@@ -127,7 +127,7 @@ function answer2(){
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
     
-        document.getElementById("vastaus3").classList.add("correctAnswer");
+        document.getElementById("vastaus2").classList.add("correctAnswer");
 
         points++;
     }
@@ -140,7 +140,6 @@ function answer2(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         document.getElementById("vastaus5").disabled = true;
-    
 
     }
 
@@ -155,7 +154,7 @@ function answer2(){
 
     }
 
-    localStorage.setItem("vastaus3",  points);
+    localStorage.setItem("vastaus2",  points);
         
     document.getElementById("next").style.visibility = 'visible';
 }
@@ -180,8 +179,6 @@ function answer3(){
         document.getElementById("vastaus3").disabled = true;
         document.getElementById("vastaus4").disabled = true;
         
-    
-        document.getElementById("vastaus2").classList.add("correctAnswer");
         
         points++;
     }
@@ -218,7 +215,7 @@ function answer3(){
       
     }
 
-    localStorage.setItem("vastaus2",  points);
+    localStorage.setItem("vastaus3",  points);
 
     document.getElementById("next").style.visibility = 'visible';
 
@@ -327,7 +324,7 @@ function answer5(){
 
 
         points++;
-        localStorage.setItem("vastaus3",  points);
+        
     }
 
     if (document.getElementById("vastaus4").checked){
@@ -347,7 +344,7 @@ function answer5(){
 
     document.getElementById("next").style.visibility = "visible";
 
-    localStorage.setItem("vastaus3", points);
+    localStorage.setItem("vastaus5", points);
 }
 // Lopussa määritellään muuttuja, johon ilmoitetaan oikeiden vastauksien summa ja tulostetaan lopputulos tekstin kanssa.
 
@@ -355,7 +352,7 @@ let lopputulos = parseInt(localStorage.getItem("vastaus1")) +
         parseInt(localStorage.getItem("vastaus2")) +
         parseInt(localStorage.getItem("vastaus3")) +
         parseInt(localStorage.getItem("vastaus4")) + 
-        parseInt(localStorage.getItem("vastaus4"));
+        parseInt(localStorage.getItem("vastaus5"));
 
 
 document.getElementById("end").innerHTML = "Sait " + lopputulos + " pistettä!"
