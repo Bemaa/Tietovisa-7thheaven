@@ -3,6 +3,7 @@
     Author : Carita Niskanen
 */
 
+/* Bodyssa määritellään sivun fontin tyyli, taustakuva ja sivun koko. Muutin navbaria matalammaksi omalle sivulleni.*/
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
@@ -16,6 +17,9 @@ body{
 .navbar-brand{
     height: 20px;
 }
+/* 
+Otsikoiden määritelmät. Halusin otsikon olevan vähän sirompi, joten siksi eri fonttia muun tekstin kanssa. Määritellään fontin väri ja koko paddingit reunoihin
+ */
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -34,6 +38,7 @@ h4{
     padding-right: 5px;
     color:rgb(50, 0, 73)
 }
+/* Määritellään kysymysboxin kokonaisuutta ympäröivät reunat, lisätään kulmien pyöristystä 15px, taustaväri ja fontin koko.*/
 .container-2{
     background-color: rgb(219, 127, 255);
     font-size: 30px;
@@ -41,16 +46,6 @@ h4{
     border: solid white;
     border-radius: 15px; 
     margin-bottom: 5px;   
-}
-input[type="radio"]{
-    margin: 0.3em;
-    font: 30px;
-    color: currentColor;
-    width: 20px;
-    height: 20px;
-    border: 0.15em solid currentColor;
-    border-radius: 50%;
-    
 }
 p:nth-of-type(1){
     background-color: rgb(244, 200, 255);
@@ -62,20 +57,15 @@ p:nth-of-type(1){
     padding-bottom: 30px;
     padding-top: 30px;
 }
-.resize{
-    width: 45%;
-    margin-left: 15%;
-    border-radius: 5%;
-}
-label{
-    font-size: 20px;
-}
-#info{
-    font-size: 20px;
-    text-align: center;
-}
-#lähde{
-    font-size: 15px;
+/* Radionappien koko ja nappien ulkomuodon määrittely. Next- ja lukitus- nappien värien määrittely, muoto ja tekstin sijoitus  */
+input[type="radio"]{
+    margin: 0.3em;
+    font: 30px;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
 }
 button{
     background-color: rgb(50, 0, 73);
@@ -103,4 +93,21 @@ button{
     margin-bottom: 30px;
     display: block;
     visibility: hidden;
+}
+
+/* Kuvan koon muokkaukset, pienet yksityiskohdat */
+.resize{
+    width: 45%;
+    margin-left: 15%;
+    border-radius: 5%;
+}
+label{
+    font-size: 20px;
+}
+#info{
+    font-size: 20px;
+    text-align: center;
+}
+#lähde{
+    font-size: 15px;
 }

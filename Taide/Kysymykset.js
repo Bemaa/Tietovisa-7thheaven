@@ -25,7 +25,7 @@ let points = 0;
 /* Seuraavaksi määrittelen muuttujat jokaiselle kysymykselle. Jokainen kysymysrakenne on samanlainen, jossa vain vastauksen kohdat muutuvat oikein/väärin. 
 Radiobutton checkataan omalla rivillä, että käyttäjä on tehnyt valinnan ja sitten ne lukitaan. 
 Oikean vastauksen if-lausekkeen sisällä lisätään 1 piste loppusivulle.
- Lopuksi pushataan localStorageen talteen vastauksen tulos. */
+Lopuksi pushataan localStorageen talteen vastauksen tulos. */
 
 function answer1(){
 
@@ -349,6 +349,7 @@ function answer5(){
 
     localStorage.setItem("vastaus3", points);
 }
+// Lopussa määritellään muuttuja, johon ilmoitetaan oikeiden vastauksien summa ja tulostetaan lopputulos tekstin kanssa.
 
 let lopputulos = parseInt(localStorage.getItem("vastaus1")) +
         parseInt(localStorage.getItem("vastaus2")) +
